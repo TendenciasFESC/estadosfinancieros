@@ -29,6 +29,122 @@ namespace ModernGUI_V3
             textBox6.Text = "0";
             textBox7.Text = "0";
             dataGridView1.Visible = false;
+            button9.Visible = false;
+        }
+
+        private void terminar(string[,] balance, int mayor)
+        {
+            int i = 0;
+            double sum = 0;
+            foreach (ListViewItem item in listView1.Items)
+            {
+                balance[i, 0] = item.Text;
+                balance[i, 1] = item.SubItems[1].Text;
+                sum += double.Parse(balance[i, 1]);
+                i++;
+            }
+            balance[i, 0] = "Total";
+            balance[i, 1] = Convert.ToString(sum);
+            i++;
+            balance[i, 0] = "Activo No Circulante";
+            balance[i, 1] = "";
+            i++;
+            sum = 0;
+            foreach (ListViewItem item in listView2.Items)
+            {
+                balance[i, 0] = item.Text;
+                balance[i, 1] = item.SubItems[1].Text;
+                sum += double.Parse(balance[i, 1]);
+                i++;
+            }
+            balance[i, 0] = "Total";
+            balance[i, 1] = Convert.ToString(sum);
+            i = 0;
+            sum = 0;
+            foreach (ListViewItem item in listView3.Items)
+            {
+                balance[i, 2] = item.Text;
+                balance[i, 3] = item.SubItems[1].Text;
+                sum += double.Parse(balance[i, 3]);
+                i++;
+            }
+            balance[i, 2] = "Total";
+            balance[i, 3] = Convert.ToString(sum);
+            i++;
+            balance[i, 2] = "Pasivo a Largo Plazo";
+            balance[i, 3] = "";
+            i++;
+            sum = 0;
+            foreach (ListViewItem item in listView4.Items)
+            {
+                balance[i, 2] = item.Text;
+                balance[i, 3] = item.SubItems[1].Text;
+                sum += double.Parse(balance[i, 3]);
+                i++;
+            }
+            balance[i, 2] = "Total";
+            balance[i, 3] = Convert.ToString(sum);
+            i++;
+            balance[i, 2] = "Capital contable";
+            balance[i, 3] = "";
+            i++;
+            sum = 0;
+            foreach (ListViewItem item in listView5.Items)
+            {
+                balance[i, 2] = item.Text;
+                balance[i, 3] = item.SubItems[1].Text;
+                sum += double.Parse(balance[i, 3]);
+                i++;
+            }
+            balance[i, 2] = "Total";
+            balance[i, 3] = Convert.ToString(sum);
+            DataTable tabla = new DataTable();
+            DataRow renglon;
+            tabla.Columns.Add(new DataColumn("Activos"));
+            tabla.Columns.Add(new DataColumn("cantidad1"));
+            tabla.Columns.Add(new DataColumn("Pasivos"));
+            tabla.Columns.Add(new DataColumn("Cantidad2"));
+            for (int k = 0; k < mayor + 5; k++)
+            {
+                renglon = tabla.NewRow();
+                renglon[0] = balance[k, 0];
+                renglon[1] = balance[k, 1];
+                renglon[2] = balance[k, 2];
+                renglon[3] = balance[k, 3];
+                tabla.Rows.Add(renglon);
+            }
+            dataGridView1.DataSource = tabla;
+            dataGridView1.Visible = true;
+        }
+
+        private void ExportarDataGridViewExcel(DataGridView grd)
+        {
+            SaveFileDialog fichero = new SaveFileDialog();
+            fichero.Filter = "Excel (*.xls)|*.xls";
+            if (fichero.ShowDialog() == DialogResult.OK)
+            {
+                Microsoft.Office.Interop.Excel.Application aplicacion;
+                Microsoft.Office.Interop.Excel.Workbook libros_trabajo;
+                Microsoft.Office.Interop.Excel.Worksheet hoja_trabajo;
+                aplicacion = new Microsoft.Office.Interop.Excel.Application();
+                libros_trabajo = aplicacion.Workbooks.Add();
+                hoja_trabajo =
+                    (Microsoft.Office.Interop.Excel.Worksheet)libros_trabajo.Worksheets.get_Item(1);
+                //Recorremos el DataGridView rellenando la hoja de trabajo
+                for (int i = 0; i < grd.Rows.Count - 1; i++)
+                {
+                    for (int j = 0; j < grd.Columns.Count; j++)
+                    {
+                        hoja_trabajo.Cells[i + 1, j + 1] = grd.Rows[i].Cells[j].Value.ToString();
+                    }
+                }
+                libros_trabajo.SaveAs(fichero.FileName,
+                    Microsoft.Office.Interop.Excel.XlFileFormat.xlWorkbookNormal);
+                libros_trabajo.Close(true);
+                aplicacion.Quit();
+                MessageBox.Show("Guardado con exito!", "Listo!");
+                limpiar();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -208,190 +324,25 @@ namespace ModernGUI_V3
 
             if (sumaAc > SumaP)
             {
+                int mayor = sumaAc;
                 string[,] balance = new string[sumaAc+6,4];
-                int i = 0;
-                double sum = 0;
-                foreach(ListViewItem item in listView1.Items)
-                {
-                    balance[i, 0] = item.Text;
-                    balance[i, 1] = item.SubItems[1].Text;
-                    sum += double.Parse(balance[i, 1]);
-                    i++;
-                }
-                balance[i, 0] = "Total";
-                balance[i, 1] = Convert.ToString(sum);
-                i++;
-                balance[i, 0] = "Activo No Circulante";
-                balance[i, 1] = "";
-                i++;
-                sum = 0;
-                foreach (ListViewItem item in listView2.Items)
-                {
-                    balance[i, 0] = item.Text;
-                    balance[i, 1] = item.SubItems[1].Text;
-                    sum += double.Parse(balance[i, 1]);
-                    i++;
-                }
-                balance[i, 0] = "Total";
-                balance[i, 1] = Convert.ToString(sum);
-                i = 0;
-                sum = 0;
-                foreach (ListViewItem item in listView3.Items)
-                {
-                    balance[i, 2] = item.Text;
-                    balance[i, 3] = item.SubItems[1].Text;
-                    sum += double.Parse(balance[i, 3]);
-                    i++;
-                }
-                balance[i, 2] = "Total";
-                balance[i, 3] = Convert.ToString(sum);
-                i++;
-                balance[i, 2] = "Pasivo a Largo Plazo";
-                balance[i, 3] = "";
-                i++;
-                sum = 0;
-                foreach (ListViewItem item in listView4.Items)
-                {
-                    balance[i, 2] = item.Text;
-                    balance[i, 3] = item.SubItems[1].Text;
-                    sum += double.Parse(balance[i, 3]);
-                    i++;
-                }
-                balance[i, 2] = "Total";
-                balance[i, 3] = Convert.ToString(sum);
-                i++;
-                balance[i, 2] = "Capital contable";
-                balance[i, 3] = "";
-                i++;
-                sum = 0;
-                foreach (ListViewItem item in listView5.Items)
-                {
-                    balance[i, 2] = item.Text;
-                    balance[i, 3] = item.SubItems[1].Text;
-                    sum += double.Parse(balance[i, 3]);
-                    i++;
-                }
-                balance[i, 2] = "Total";
-                balance[i, 3] = Convert.ToString(sum);
-                DataTable tabla = new DataTable();
-                DataRow renglon;
-                tabla.Columns.Add(new DataColumn("Activos"));
-                tabla.Columns.Add(new DataColumn("cantidad1"));
-                tabla.Columns.Add(new DataColumn("Pasivos"));
-                tabla.Columns.Add(new DataColumn("Cantidad2"));
-                for (int k = 0; k < sumaAc + 5; k++)
-                {
-                    renglon = tabla.NewRow();
-                    renglon[0] = balance[k, 0];
-                    renglon[1] = balance[k, 1];
-                    renglon[2] = balance[k, 2];
-                    renglon[3] = balance[k, 3];
-                    tabla.Rows.Add(renglon);
-                }
-                dataGridView1.DataSource = tabla;
-                dataGridView1.Visible = true;
+                terminar(balance, mayor);
             }
             else
             {
+                int mayor = SumaP;
                 string[,] balance = new string[SumaP+6, 4];
-                int i = 0;
-                double sum = 0;
-                foreach (ListViewItem item in listView1.Items)
-                {
-                    balance[i, 0] = item.Text;
-                    balance[i, 1] = item.SubItems[1].Text;
-                    sum += double.Parse(balance[i, 1]);
-                    i++;
-                }
-                balance[i, 0] = "Total";
-                balance[i, 1] = Convert.ToString(sum);
-                i++;
-                balance[i, 0] = "Activo No Circulante";
-                balance[i, 1] = "";
-                i++;
-                sum = 0;
-                foreach (ListViewItem item in listView2.Items)
-                {
-                    balance[i, 0] = item.Text;
-                    balance[i, 1] = item.SubItems[1].Text;
-                    sum += double.Parse(balance[i, 1]);
-                    i++;
-                }
-                balance[i, 0] = "Total";
-                balance[i, 1] = Convert.ToString(sum);
-                i = 0;
-                sum = 0;
-                foreach (ListViewItem item in listView3.Items)
-                {
-                    balance[i, 2] = item.Text;
-                    balance[i, 3] = item.SubItems[1].Text;
-                    sum += double.Parse(balance[i, 3]);
-                    i++;
-                }
-                balance[i, 2] = "Total";
-                balance[i, 3] = Convert.ToString(sum);
-                i++;
-                balance[i, 2] = "Pasivo a Largo Plazo";
-                balance[i, 3] = "";
-                i++;
-                sum = 0;
-                foreach (ListViewItem item in listView4.Items)
-                {
-                    balance[i, 2] = item.Text;
-                    balance[i, 3] = item.SubItems[1].Text;
-                    sum += double.Parse(balance[i, 3]);
-                    i++;
-                }
-                balance[i, 2] = "Total";
-                balance[i, 3] = Convert.ToString(sum);
-                i++;
-                balance[i, 2] = "Capital contable";
-                balance[i, 3] = "";
-                i++;
-                sum = 0;
-                foreach (ListViewItem item in listView5.Items)
-                {
-                    balance[i, 2] = item.Text;
-                    balance[i, 3] = item.SubItems[1].Text;
-                    sum += double.Parse(balance[i, 3]);
-                    i++;
-                }
-                balance[i, 2] = "Total";
-                balance[i, 3] = Convert.ToString(sum);
-                DataTable tabla = new DataTable();
-                DataRow renglon;
-                tabla.Columns.Add(new DataColumn("Activos"));
-                tabla.Columns.Add(new DataColumn("cantidad1"));
-                tabla.Columns.Add(new DataColumn("Pasivos"));
-                tabla.Columns.Add(new DataColumn("Cantidad2"));
-                for (int k = 0; k < sumaAc + 5; k++)
-                {
-                    renglon = tabla.NewRow();
-                    renglon[0] = balance[k, 0];
-                    renglon[1] = balance[k, 1];
-                    renglon[2] = balance[k, 2];
-                    renglon[3] = balance[k, 3];
-                    tabla.Rows.Add(renglon);
-                }
-                dataGridView1.DataSource = tabla;
-                dataGridView1.Visible = true;
+                terminar(balance, mayor);
+                
             }
-
-
-           
-            foreach (ListViewItem item in listView2.Items)
-            {
-            }
-            foreach (ListViewItem item in listView3.Items)
-            {
-            }
-            foreach (ListViewItem item in listView4.Items)
-            {
-            }
-            foreach (ListViewItem item in listView5.Items)
-            {
-            }
+            button9.Visible = true;
             
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            ExportarDataGridViewExcel(dataGridView1);
+
         }
     }
 }

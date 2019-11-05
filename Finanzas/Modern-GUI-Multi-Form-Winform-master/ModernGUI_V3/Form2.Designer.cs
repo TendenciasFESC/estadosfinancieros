@@ -31,15 +31,21 @@
             this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.activoCirculanteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.finanzasDataSet = new ModernGUI_V3.finanzasDataSet();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.activoNoCirculanteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.pasivoCortoPlazoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label4 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.pasivoLargoPlazoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.capitalContableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -50,19 +56,14 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button6 = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.finanzasDataSet = new ModernGUI_V3.finanzasDataSet();
-            this.activoCirculanteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.activoCirculanteTableAdapter = new ModernGUI_V3.finanzasDataSetTableAdapters.ActivoCirculanteTableAdapter();
-            this.activoNoCirculanteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.activoNoCirculanteTableAdapter = new ModernGUI_V3.finanzasDataSetTableAdapters.ActivoNoCirculanteTableAdapter();
-            this.capitalContableBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.capitalContableTableAdapter = new ModernGUI_V3.finanzasDataSetTableAdapters.CapitalContableTableAdapter();
-            this.pasivoCortoPlazoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pasivoCortoPlazoTableAdapter = new ModernGUI_V3.finanzasDataSetTableAdapters.PasivoCortoPlazoTableAdapter();
-            this.pasivoLargoPlazoBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pasivoLargoPlazoTableAdapter = new ModernGUI_V3.finanzasDataSetTableAdapters.PasivoLargoPlazoTableAdapter();
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Cantidad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.listView2 = new System.Windows.Forms.ListView();
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -77,25 +78,25 @@
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.Cantidad = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.finanzasDataSet)).BeginInit();
+            this.button9 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.activoCirculanteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finanzasDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.activoNoCirculanteBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.capitalContableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pasivoCortoPlazoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pasivoLargoPlazoBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.capitalContableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(913, 18);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 19);
             this.button1.TabIndex = 9;
@@ -113,6 +114,16 @@
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 10;
             this.comboBox1.ValueMember = "NombreCuenta";
+            // 
+            // activoCirculanteBindingSource
+            // 
+            this.activoCirculanteBindingSource.DataMember = "ActivoCirculante";
+            this.activoCirculanteBindingSource.DataSource = this.finanzasDataSet;
+            // 
+            // finanzasDataSet
+            // 
+            this.finanzasDataSet.DataSetName = "finanzasDataSet";
+            this.finanzasDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label1
             // 
@@ -143,6 +154,11 @@
             this.comboBox2.TabIndex = 12;
             this.comboBox2.ValueMember = "NombreCuenta";
             // 
+            // activoNoCirculanteBindingSource
+            // 
+            this.activoNoCirculanteBindingSource.DataMember = "ActivoNoCirculante";
+            this.activoNoCirculanteBindingSource.DataSource = this.finanzasDataSet;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -162,6 +178,11 @@
             this.comboBox3.Size = new System.Drawing.Size(121, 21);
             this.comboBox3.TabIndex = 14;
             this.comboBox3.ValueMember = "NombreCuenta";
+            // 
+            // pasivoCortoPlazoBindingSource
+            // 
+            this.pasivoCortoPlazoBindingSource.DataMember = "PasivoCortoPlazo";
+            this.pasivoCortoPlazoBindingSource.DataSource = this.finanzasDataSet;
             // 
             // label4
             // 
@@ -183,6 +204,11 @@
             this.comboBox4.TabIndex = 16;
             this.comboBox4.ValueMember = "NombreCuenta";
             // 
+            // pasivoLargoPlazoBindingSource
+            // 
+            this.pasivoLargoPlazoBindingSource.DataMember = "PasivoLargoPlazo";
+            this.pasivoLargoPlazoBindingSource.DataSource = this.finanzasDataSet;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -202,6 +228,11 @@
             this.comboBox5.Size = new System.Drawing.Size(121, 21);
             this.comboBox5.TabIndex = 18;
             this.comboBox5.ValueMember = "NombreCuenta";
+            // 
+            // capitalContableBindingSource
+            // 
+            this.capitalContableBindingSource.DataMember = "CapitalContable";
+            this.capitalContableBindingSource.DataSource = this.finanzasDataSet;
             // 
             // textBox1
             // 
@@ -290,51 +321,21 @@
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 33;
             // 
-            // finanzasDataSet
-            // 
-            this.finanzasDataSet.DataSetName = "finanzasDataSet";
-            this.finanzasDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // activoCirculanteBindingSource
-            // 
-            this.activoCirculanteBindingSource.DataMember = "ActivoCirculante";
-            this.activoCirculanteBindingSource.DataSource = this.finanzasDataSet;
-            // 
             // activoCirculanteTableAdapter
             // 
             this.activoCirculanteTableAdapter.ClearBeforeFill = true;
-            // 
-            // activoNoCirculanteBindingSource
-            // 
-            this.activoNoCirculanteBindingSource.DataMember = "ActivoNoCirculante";
-            this.activoNoCirculanteBindingSource.DataSource = this.finanzasDataSet;
             // 
             // activoNoCirculanteTableAdapter
             // 
             this.activoNoCirculanteTableAdapter.ClearBeforeFill = true;
             // 
-            // capitalContableBindingSource
-            // 
-            this.capitalContableBindingSource.DataMember = "CapitalContable";
-            this.capitalContableBindingSource.DataSource = this.finanzasDataSet;
-            // 
             // capitalContableTableAdapter
             // 
             this.capitalContableTableAdapter.ClearBeforeFill = true;
             // 
-            // pasivoCortoPlazoBindingSource
-            // 
-            this.pasivoCortoPlazoBindingSource.DataMember = "PasivoCortoPlazo";
-            this.pasivoCortoPlazoBindingSource.DataSource = this.finanzasDataSet;
-            // 
             // pasivoCortoPlazoTableAdapter
             // 
             this.pasivoCortoPlazoTableAdapter.ClearBeforeFill = true;
-            // 
-            // pasivoLargoPlazoBindingSource
-            // 
-            this.pasivoLargoPlazoBindingSource.DataMember = "PasivoLargoPlazo";
-            this.pasivoLargoPlazoBindingSource.DataSource = this.finanzasDataSet;
             // 
             // pasivoLargoPlazoTableAdapter
             // 
@@ -358,6 +359,11 @@
             // 
             this.columnHeader1.Text = "Activo Circulante";
             this.columnHeader1.Width = 98;
+            // 
+            // Cantidad
+            // 
+            this.Cantidad.Text = "Cantidad";
+            this.Cantidad.Width = 95;
             // 
             // listView2
             // 
@@ -466,11 +472,6 @@
             this.textBox7.TabIndex = 41;
             this.textBox7.Text = "0";
             // 
-            // Cantidad
-            // 
-            this.Cantidad.Text = "Cantidad";
-            this.Cantidad.Width = 95;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -518,11 +519,23 @@
             this.dataGridView1.TabIndex = 47;
             this.dataGridView1.Visible = false;
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(809, 642);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 23);
+            this.button9.TabIndex = 48;
+            this.button9.Text = "Guardar";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Visible = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1018, 677);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -556,16 +569,16 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.finanzasDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.activoCirculanteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.finanzasDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.activoNoCirculanteBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.capitalContableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pasivoCortoPlazoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pasivoLargoPlazoBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.capitalContableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -627,5 +640,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button button9;
     }
 }
