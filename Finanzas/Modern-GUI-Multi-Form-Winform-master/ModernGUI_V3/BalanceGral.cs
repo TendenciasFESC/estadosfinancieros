@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace ModernGUI_V3
 {
-    public partial class Form2 : Form
+    public partial class BalanceGral : Form
     {
         
         
-        public Form2()
+        public BalanceGral()
         {
             InitializeComponent();
         }
@@ -343,6 +343,11 @@ namespace ModernGUI_V3
         {
             ExportarDataGridViewExcel(dataGridView1);
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

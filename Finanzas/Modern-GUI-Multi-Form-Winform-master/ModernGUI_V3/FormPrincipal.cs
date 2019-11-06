@@ -116,14 +116,14 @@ namespace ModernGUI_V3
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<Form2>();
+            AbrirFormulario<BalanceGral>();
             button2.BackColor = Color.FromArgb(12, 61, 92);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            AbrirFormulario<Form3>();
-            button3.BackColor = Color.FromArgb(12, 61, 92);
+            AbrirFormulario<Form2>();
+            Origenes.BackColor = Color.FromArgb(12, 61, 92);
         }
 
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -157,7 +157,7 @@ namespace ModernGUI_V3
             if (Application.OpenForms["Form2"] == null)
                 button2.BackColor = Color.FromArgb(4, 41, 68);
             if (Application.OpenForms["Form3"] == null)
-                button3.BackColor = Color.FromArgb(4, 41, 68);
+                Origenes.BackColor = Color.FromArgb(4, 41, 68);
         }
     }
 }

@@ -31,21 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.panelContenedor = new System.Windows.Forms.Panel();
             this.panelformularios = new System.Windows.Forms.Panel();
-            this.panelMenu = new System.Windows.Forms.Panel();
-            this.panelBarraTitulo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.panelMenu = new System.Windows.Forms.Panel();
+            this.Origenes = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.panelBarraTitulo = new System.Windows.Forms.Panel();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.btnMinimizar = new System.Windows.Forms.PictureBox();
             this.btnMaximizar = new System.Windows.Forms.PictureBox();
             this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.panelContenedor.SuspendLayout();
             this.panelformularios.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelMenu.SuspendLayout();
             this.panelBarraTitulo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
@@ -76,34 +76,6 @@
             this.panelformularios.Size = new System.Drawing.Size(1012, 688);
             this.panelformularios.TabIndex = 2;
             // 
-            // panelMenu
-            // 
-            this.panelMenu.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.panelMenu.Controls.Add(this.button3);
-            this.panelMenu.Controls.Add(this.button2);
-            this.panelMenu.Controls.Add(this.button1);
-            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMenu.Location = new System.Drawing.Point(0, 32);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
-            this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(188, 688);
-            this.panelMenu.TabIndex = 1;
-            // 
-            // panelBarraTitulo
-            // 
-            this.panelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(93)))), ((int)(((byte)(142)))));
-            this.panelBarraTitulo.Controls.Add(this.btnRestaurar);
-            this.panelBarraTitulo.Controls.Add(this.btnMinimizar);
-            this.panelBarraTitulo.Controls.Add(this.btnMaximizar);
-            this.panelBarraTitulo.Controls.Add(this.btnCerrar);
-            this.panelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelBarraTitulo.Location = new System.Drawing.Point(0, 0);
-            this.panelBarraTitulo.Margin = new System.Windows.Forms.Padding(2);
-            this.panelBarraTitulo.Name = "panelBarraTitulo";
-            this.panelBarraTitulo.Size = new System.Drawing.Size(1200, 32);
-            this.panelBarraTitulo.TabIndex = 0;
-            this.panelBarraTitulo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelBarraTitulo_MouseMove);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -118,25 +90,38 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // button3
+            // panelMenu
             // 
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
-            this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(2, 92);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(188, 40);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.panelMenu.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.panelMenu.Controls.Add(this.Origenes);
+            this.panelMenu.Controls.Add(this.button2);
+            this.panelMenu.Controls.Add(this.button1);
+            this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelMenu.Location = new System.Drawing.Point(0, 32);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.panelMenu.Name = "panelMenu";
+            this.panelMenu.Size = new System.Drawing.Size(188, 688);
+            this.panelMenu.TabIndex = 1;
+            // 
+            // Origenes
+            // 
+            this.Origenes.FlatAppearance.BorderSize = 0;
+            this.Origenes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.Origenes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.Origenes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Origenes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Origenes.ForeColor = System.Drawing.Color.Gainsboro;
+            this.Origenes.Image = ((System.Drawing.Image)(resources.GetObject("Origenes.Image")));
+            this.Origenes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Origenes.Location = new System.Drawing.Point(2, 92);
+            this.Origenes.Margin = new System.Windows.Forms.Padding(2);
+            this.Origenes.Name = "Origenes";
+            this.Origenes.Size = new System.Drawing.Size(188, 40);
+            this.Origenes.TabIndex = 2;
+            this.Origenes.Text = "Origenes y aplicaciones";
+            this.Origenes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.Origenes.UseVisualStyleBackColor = true;
+            this.Origenes.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -177,6 +162,21 @@
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panelBarraTitulo
+            // 
+            this.panelBarraTitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(93)))), ((int)(((byte)(142)))));
+            this.panelBarraTitulo.Controls.Add(this.btnRestaurar);
+            this.panelBarraTitulo.Controls.Add(this.btnMinimizar);
+            this.panelBarraTitulo.Controls.Add(this.btnMaximizar);
+            this.panelBarraTitulo.Controls.Add(this.btnCerrar);
+            this.panelBarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelBarraTitulo.Location = new System.Drawing.Point(0, 0);
+            this.panelBarraTitulo.Margin = new System.Windows.Forms.Padding(2);
+            this.panelBarraTitulo.Name = "panelBarraTitulo";
+            this.panelBarraTitulo.Size = new System.Drawing.Size(1200, 32);
+            this.panelBarraTitulo.TabIndex = 0;
+            this.panelBarraTitulo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panelBarraTitulo_MouseMove);
             // 
             // btnRestaurar
             // 
@@ -250,9 +250,9 @@
             this.Load += new System.EventHandler(this.FormPrincipal_Load);
             this.panelContenedor.ResumeLayout(false);
             this.panelformularios.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelMenu.ResumeLayout(false);
             this.panelBarraTitulo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
@@ -271,7 +271,7 @@
         private System.Windows.Forms.PictureBox btnMinimizar;
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnCerrar;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button Origenes;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;

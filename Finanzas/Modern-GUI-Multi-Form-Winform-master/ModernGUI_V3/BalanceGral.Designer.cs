@@ -1,6 +1,6 @@
 ﻿namespace ModernGUI_V3
 {
-    partial class Form2
+    partial class BalanceGral
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.activoCirculanteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.finanzasDataSet = new ModernGUI_V3.finanzasDataSet();
@@ -84,6 +83,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button9 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.activoCirculanteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.finanzasDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.activoNoCirculanteBindingSource)).BeginInit();
@@ -91,18 +91,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pasivoLargoPlazoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.capitalContableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(913, 18);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 19);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // comboBox1
             // 
@@ -530,11 +520,23 @@
             this.button9.Visible = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
-            // Form2
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ModernGUI_V3.Properties.Resources.close_window;
+            this.pictureBox1.Location = new System.Drawing.Point(944, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(62, 57);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 313;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // BalanceGral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1018, 677);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button8);
@@ -568,9 +570,8 @@
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Form2";
+            this.Name = "BalanceGral";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.activoCirculanteBindingSource)).EndInit();
@@ -580,13 +581,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pasivoLargoPlazoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.capitalContableBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -641,5 +642,6 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
