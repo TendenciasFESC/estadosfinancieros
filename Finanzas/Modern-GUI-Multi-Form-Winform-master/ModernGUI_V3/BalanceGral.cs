@@ -98,13 +98,17 @@ namespace ModernGUI_V3
             }
             balance[i, 2] = "Total";
             balance[i, 3] = Convert.ToString(sum);
+            balance[mayor + 5, 0] = "Total Activos";
+            balance[mayor + 5, 1] = Convert.ToString(textBox6.Text);
+            balance[mayor + 5, 2] = "Total Pasivos y CC";
+            balance[mayor + 5, 3] = Convert.ToString(textBox7.Text);
             DataTable tabla = new DataTable();
             DataRow renglon;
             tabla.Columns.Add(new DataColumn("Activos"));
             tabla.Columns.Add(new DataColumn("cantidad1"));
             tabla.Columns.Add(new DataColumn("Pasivos"));
             tabla.Columns.Add(new DataColumn("Cantidad2"));
-            for (int k = 0; k < mayor + 5; k++)
+            for (int k = 0; k < mayor + 6; k++)
             {
                 renglon = tabla.NewRow();
                 renglon[0] = balance[k, 0];
