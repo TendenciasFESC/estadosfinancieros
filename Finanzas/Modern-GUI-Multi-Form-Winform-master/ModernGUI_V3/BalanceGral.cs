@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Printing;
+using System.Drawing;
 
 namespace ModernGUI_V3
 {
@@ -30,6 +32,7 @@ namespace ModernGUI_V3
             textBox7.Text = "0";
             dataGridView1.Visible = false;
             button9.Visible = false;
+            print.Visible = false;
         }
 
         private void terminar(string[,] balance, int mayor)
@@ -118,6 +121,10 @@ namespace ModernGUI_V3
                 tabla.Rows.Add(renglon);
             }
             dataGridView1.DataSource = tabla;
+            dataGridView1.Columns[0].Width = 200;
+            dataGridView1.Columns[1].Width = 100;
+            dataGridView1.Columns[2].Width = 200;
+            dataGridView1.Columns[3].Width = 100;
             dataGridView1.Visible = true;
         }
 
@@ -340,6 +347,7 @@ namespace ModernGUI_V3
                 
             }
             button9.Visible = true;
+            print.Visible = true;
             
         }
 
@@ -352,6 +360,48 @@ namespace ModernGUI_V3
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void print_Click(object sender, EventArgs e)
+        {
+            PrintDocument doc = new PrintDocument();
+            doc.DefaultPageSettings.Landscape = true;
+            doc.PrinterSettings.PrinterName = "Microsoft Print to PDF";
+
+            PrintPreviewDialog ppd = new PrintPreviewDialog { Document = doc };
+            ((Form)ppd).WindowState = FormWindowState.Maximized;
+
+            doc.PrintPage += delegate (object ev, PrintPageEventArgs ep)
+            {
+                const int DGV_ALTO = 35;
+                int left = ep.MarginBounds.Left, top = ep.MarginBounds.Top;
+
+                foreach (DataGridViewColumn col in dataGridView1.Columns)
+                {
+                    ep.Graphics.DrawString(col.HeaderText, new Font("Segoe UI", 16, FontStyle.Bold), Brushes.DeepSkyBlue, left, top);
+                    left += col.Width;
+
+                    if (col.Index < dataGridView1.ColumnCount - 1)
+                        ep.Graphics.DrawLine(Pens.Gray, left - 5, top, left - 5, top + 43 + (dataGridView1.RowCount - 1) * DGV_ALTO);
+                }
+                left = ep.MarginBounds.Left;
+                ep.Graphics.FillRectangle(Brushes.Black, left, top + 40, ep.MarginBounds.Right - left, 3);
+                top += 43;
+
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                {
+                    if (row.Index == dataGridView1.RowCount) break;
+                    left = ep.MarginBounds.Left;
+                    foreach (DataGridViewCell cell in row.Cells)
+                    {
+                        ep.Graphics.DrawString(Convert.ToString(cell.Value), new Font("Segoe UI", 13), Brushes.Black, left, top + 4);
+                        left += cell.OwningColumn.Width;
+                    }
+                    top += DGV_ALTO;
+                    ep.Graphics.DrawLine(Pens.Gray, ep.MarginBounds.Left, top, ep.MarginBounds.Right, top);
+                }
+            };
+            ppd.ShowDialog();
         }
     }
 }

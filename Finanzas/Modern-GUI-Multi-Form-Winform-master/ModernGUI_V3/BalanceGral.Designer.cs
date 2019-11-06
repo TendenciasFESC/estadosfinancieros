@@ -84,6 +84,7 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button9 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.print = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.activoCirculanteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.finanzasDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.activoNoCirculanteBindingSource)).BeginInit();
@@ -502,9 +503,12 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 13);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(876, 546);
             this.dataGridView1.TabIndex = 47;
             this.dataGridView1.Visible = false;
@@ -531,11 +535,23 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // print
+            // 
+            this.print.Location = new System.Drawing.Point(728, 642);
+            this.print.Name = "print";
+            this.print.Size = new System.Drawing.Size(75, 23);
+            this.print.TabIndex = 314;
+            this.print.Text = "imprimir";
+            this.print.UseVisualStyleBackColor = true;
+            this.print.Visible = false;
+            this.print.Click += new System.EventHandler(this.print_Click);
+            // 
             // BalanceGral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1018, 677);
+            this.Controls.Add(this.print);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.dataGridView1);
@@ -643,5 +659,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button print;
     }
 }
