@@ -1540,7 +1540,7 @@
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(238, 20);
             this.label6.TabIndex = 162;
-            this.label6.Text = "Clientes y deodores diversos";
+            this.label6.Text = "Clientes y deudores diversos";
             // 
             // label5
             // 

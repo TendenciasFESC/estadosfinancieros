@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Printing;
-using System.Drawing;
+
 
 namespace ModernGUI_V3
 {
@@ -154,7 +154,7 @@ namespace ModernGUI_V3
                 libros_trabajo.Close(true);
                 aplicacion.Quit();
                 MessageBox.Show("Guardado con exito!", "Listo!");
-                limpiar();
+                
             }
         }
 
