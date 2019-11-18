@@ -314,7 +314,6 @@ namespace ModernGUI_V3
         private void button7_Click(object sender, EventArgs e)
         {
             limpiar();
-            //Prueba Git
         }
 
         private void button8_Click(object sender, EventArgs e)
