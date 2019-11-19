@@ -16,5 +16,10 @@ namespace ModernGUI_V3
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
