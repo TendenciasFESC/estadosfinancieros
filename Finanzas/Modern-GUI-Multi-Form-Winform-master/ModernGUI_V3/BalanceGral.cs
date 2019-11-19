@@ -360,6 +360,7 @@ namespace ModernGUI_V3
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+            button2.BackColor = Color.FromArgb(72, 53, 4);
         }
 
         private void print_Click(object sender, EventArgs e)

@@ -586,6 +586,7 @@
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BalanceGral";
             this.Text = "Form2";

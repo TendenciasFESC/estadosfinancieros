@@ -267,5 +267,10 @@ namespace ModernGUI_V3
             };
             ppd.ShowDialog();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

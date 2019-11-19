@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Analisis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Analisis.Designer.cs">
+      <DependentUpon>Analisis.cs</DependentUpon>
+    </Compile>
     <Compile Include="finanzasDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -84,6 +90,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Analisis.resx">
+      <DependentUpon>Analisis.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

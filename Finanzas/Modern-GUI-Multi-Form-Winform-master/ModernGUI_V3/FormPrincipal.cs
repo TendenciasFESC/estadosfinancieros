@@ -128,6 +128,12 @@ namespace ModernGUI_V3
 
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            AbrirFormulario<Analisis>();
+            button3.BackColor = Color.FromArgb(12, 61, 92);
+        }
         #endregion
         //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL
         private void AbrirFormulario<MiForm>() where MiForm : Form, new() {
@@ -153,11 +159,13 @@ namespace ModernGUI_V3
         }
         private void CloseForms(object sender,FormClosedEventArgs e) {
             if (Application.OpenForms["Form1"] == null)
-                button1.BackColor = Color.FromArgb(4, 41, 68);
+                button1.BackColor = Color.FromArgb(184, 134, 11);
+            if (Application.OpenForms["BalanceGral"] == null)
+                button2.BackColor = Color.FromArgb(184, 134, 11);
             if (Application.OpenForms["Form2"] == null)
-                button2.BackColor = Color.FromArgb(4, 41, 68);
-            if (Application.OpenForms["Form3"] == null)
-                Origenes.BackColor = Color.FromArgb(4, 41, 68);
+                Origenes.BackColor = Color.FromArgb(184, 134, 11);
+            if (Application.OpenForms["Analisis"] == null)
+                button3.BackColor = Color.FromArgb(184, 134, 11);
         }
     }
 }
