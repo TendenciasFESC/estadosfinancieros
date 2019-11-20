@@ -21,7 +21,7 @@ namespace ModernGUI_V3
             InitializeComponent();
         }
 
-        private void limpiar()
+        private void Limpiar()
         {
             listView1.Items.Clear();
             listView2.Items.Clear();
@@ -35,7 +35,7 @@ namespace ModernGUI_V3
             print.Visible = false;
         }
 
-        private void terminar(string[,] balance, int mayor)
+        private void Terminar(string[,] balance, int mayor)
         {
             int i = 0;
             double sum = 0;
@@ -130,8 +130,10 @@ namespace ModernGUI_V3
 
         private void ExportarDataGridViewExcel(DataGridView grd)
         {
-            SaveFileDialog fichero = new SaveFileDialog();
-            fichero.Filter = "Excel (*.xls)|*.xls";
+            SaveFileDialog fichero = new SaveFileDialog
+            {
+                Filter = "Excel (*.xls)|*.xls"
+            };
             if (fichero.ShowDialog() == DialogResult.OK)
             {
                 Microsoft.Office.Interop.Excel.Application aplicacion;
@@ -313,7 +315,7 @@ namespace ModernGUI_V3
 
         private void button7_Click(object sender, EventArgs e)
         {
-            limpiar();
+            Limpiar();
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -337,13 +339,13 @@ namespace ModernGUI_V3
             {
                 int mayor = sumaAc;
                 string[,] balance = new string[sumaAc+6,4];
-                terminar(balance, mayor);
+                Terminar(balance, mayor);
             }
             else
             {
                 int mayor = SumaP;
                 string[,] balance = new string[SumaP+6, 4];
-                terminar(balance, mayor);
+                Terminar(balance, mayor);
                 
             }
             button9.Visible = true;
