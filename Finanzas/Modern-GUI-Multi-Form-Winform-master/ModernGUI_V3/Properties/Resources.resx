@@ -121,7 +121,16 @@
   <data name="close_window" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close-window.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Finanzas-definicion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Finanzas-definicion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo-unam" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo-unam.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="_17022349_274154469687043_9064629828084111329_n" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\17022349_274154469687043_9064629828084111329_n.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Button-Close-(32)_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Button-Close-(32)_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

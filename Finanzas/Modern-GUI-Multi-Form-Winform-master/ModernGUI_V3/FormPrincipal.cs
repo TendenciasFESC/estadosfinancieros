@@ -134,6 +134,12 @@ namespace ModernGUI_V3
             AbrirFormulario<Analisis>();
             button3.BackColor = Color.FromArgb(12, 61, 92);
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<Catalogo>();
+            button4.BackColor = Color.FromArgb(12, 61, 92);
+        }
         #endregion
         //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL
         private void AbrirFormulario<MiForm>() where MiForm : Form, new() {

@@ -35,7 +35,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ModernGUI_V3.Properties.Resources.close_window;
-            this.pictureBox1.Location = new System.Drawing.Point(922, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(1212, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(62, 57);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -48,7 +48,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(996, 649);
+            this.ClientSize = new System.Drawing.Size(1286, 649);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Analisis";

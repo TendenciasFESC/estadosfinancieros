@@ -35,6 +35,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Activities" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -53,6 +54,13 @@
     <Compile Include="Analisis.Designer.cs">
       <DependentUpon>Analisis.cs</DependentUpon>
     </Compile>
+    <Compile Include="Catalogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Catalogo.Designer.cs">
+      <DependentUpon>Catalogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dim.cs" />
     <Compile Include="finanzasDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -92,6 +100,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Analisis.resx">
       <DependentUpon>Analisis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Catalogo.resx">
+      <DependentUpon>Catalogo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -146,6 +157,9 @@
     <Content Include="finanzas.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\Button-Close-%2832%29_1.png" />
+    <None Include="Resources\Logo-unam.png" />
+    <None Include="Resources\Finanzas-definicion.png" />
     <None Include="Resources\close-window.png" />
     <None Include="Resources\17022349_274154469687043_9064629828084111329_n.png" />
   </ItemGroup>

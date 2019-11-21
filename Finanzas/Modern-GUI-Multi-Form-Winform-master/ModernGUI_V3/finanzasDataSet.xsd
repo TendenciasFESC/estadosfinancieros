@@ -53,7 +53,17 @@
               <Mapping SourceColumn="CveCuenta" DataSetColumn="CveCuenta" />
               <Mapping SourceColumn="NombreCuenta" DataSetColumn="NombreCuenta" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="finanzasConnectionString (Settings)" DbObjectName="ActivoCirculante" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        CveCuenta, NombreCuenta
+FROM            ActivoCirculante</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ActivoNoCirculanteTableAdapter" GeneratorDataComponentClassName="ActivoNoCirculanteTableAdapter" Name="ActivoNoCirculante" UserDataComponentName="ActivoNoCirculanteTableAdapter">
             <MainSource>
@@ -255,7 +265,7 @@
   <xs:element name="finanzasDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="finanzasDataSet" msprop:Generator_UserDSName="finanzasDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="ActivoCirculante" msprop:Generator_TableClassName="ActivoCirculanteDataTable" msprop:Generator_TableVarName="tableActivoCirculante" msprop:Generator_TablePropName="ActivoCirculante" msprop:Generator_RowDeletingName="ActivoCirculanteRowDeleting" msprop:Generator_RowChangingName="ActivoCirculanteRowChanging" msprop:Generator_RowEvHandlerName="ActivoCirculanteRowChangeEventHandler" msprop:Generator_RowDeletedName="ActivoCirculanteRowDeleted" msprop:Generator_UserTableName="ActivoCirculante" msprop:Generator_RowChangedName="ActivoCirculanteRowChanged" msprop:Generator_RowEvArgName="ActivoCirculanteRowChangeEvent" msprop:Generator_RowClassName="ActivoCirculanteRow">
+        <xs:element name="ActivoCirculante" msprop:Generator_TableClassName="ActivoCirculanteDataTable" msprop:Generator_TableVarName="tableActivoCirculante" msprop:Generator_RowChangedName="ActivoCirculanteRowChanged" msprop:Generator_TablePropName="ActivoCirculante" msprop:Generator_RowDeletingName="ActivoCirculanteRowDeleting" msprop:Generator_RowChangingName="ActivoCirculanteRowChanging" msprop:Generator_RowEvHandlerName="ActivoCirculanteRowChangeEventHandler" msprop:Generator_RowDeletedName="ActivoCirculanteRowDeleted" msprop:Generator_RowClassName="ActivoCirculanteRow" msprop:Generator_UserTableName="ActivoCirculante" msprop:Generator_RowEvArgName="ActivoCirculanteRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CveCuenta" msprop:Generator_ColumnVarNameInTable="columnCveCuenta" msprop:Generator_ColumnPropNameInRow="CveCuenta" msprop:Generator_ColumnPropNameInTable="CveCuentaColumn" msprop:Generator_UserColumnName="CveCuenta" type="xs:int" />
@@ -269,7 +279,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="ActivoNoCirculante" msprop:Generator_TableClassName="ActivoNoCirculanteDataTable" msprop:Generator_TableVarName="tableActivoNoCirculante" msprop:Generator_TablePropName="ActivoNoCirculante" msprop:Generator_RowDeletingName="ActivoNoCirculanteRowDeleting" msprop:Generator_RowChangingName="ActivoNoCirculanteRowChanging" msprop:Generator_RowEvHandlerName="ActivoNoCirculanteRowChangeEventHandler" msprop:Generator_RowDeletedName="ActivoNoCirculanteRowDeleted" msprop:Generator_UserTableName="ActivoNoCirculante" msprop:Generator_RowChangedName="ActivoNoCirculanteRowChanged" msprop:Generator_RowEvArgName="ActivoNoCirculanteRowChangeEvent" msprop:Generator_RowClassName="ActivoNoCirculanteRow">
+        <xs:element name="ActivoNoCirculante" msprop:Generator_TableClassName="ActivoNoCirculanteDataTable" msprop:Generator_TableVarName="tableActivoNoCirculante" msprop:Generator_RowChangedName="ActivoNoCirculanteRowChanged" msprop:Generator_TablePropName="ActivoNoCirculante" msprop:Generator_RowDeletingName="ActivoNoCirculanteRowDeleting" msprop:Generator_RowChangingName="ActivoNoCirculanteRowChanging" msprop:Generator_RowEvHandlerName="ActivoNoCirculanteRowChangeEventHandler" msprop:Generator_RowDeletedName="ActivoNoCirculanteRowDeleted" msprop:Generator_RowClassName="ActivoNoCirculanteRow" msprop:Generator_UserTableName="ActivoNoCirculante" msprop:Generator_RowEvArgName="ActivoNoCirculanteRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CveCuenta" msprop:Generator_ColumnVarNameInTable="columnCveCuenta" msprop:Generator_ColumnPropNameInRow="CveCuenta" msprop:Generator_ColumnPropNameInTable="CveCuentaColumn" msprop:Generator_UserColumnName="CveCuenta" type="xs:int" />
@@ -283,7 +293,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="CapitalContable" msprop:Generator_TableClassName="CapitalContableDataTable" msprop:Generator_TableVarName="tableCapitalContable" msprop:Generator_TablePropName="CapitalContable" msprop:Generator_RowDeletingName="CapitalContableRowDeleting" msprop:Generator_RowChangingName="CapitalContableRowChanging" msprop:Generator_RowEvHandlerName="CapitalContableRowChangeEventHandler" msprop:Generator_RowDeletedName="CapitalContableRowDeleted" msprop:Generator_UserTableName="CapitalContable" msprop:Generator_RowChangedName="CapitalContableRowChanged" msprop:Generator_RowEvArgName="CapitalContableRowChangeEvent" msprop:Generator_RowClassName="CapitalContableRow">
+        <xs:element name="CapitalContable" msprop:Generator_TableClassName="CapitalContableDataTable" msprop:Generator_TableVarName="tableCapitalContable" msprop:Generator_RowChangedName="CapitalContableRowChanged" msprop:Generator_TablePropName="CapitalContable" msprop:Generator_RowDeletingName="CapitalContableRowDeleting" msprop:Generator_RowChangingName="CapitalContableRowChanging" msprop:Generator_RowEvHandlerName="CapitalContableRowChangeEventHandler" msprop:Generator_RowDeletedName="CapitalContableRowDeleted" msprop:Generator_RowClassName="CapitalContableRow" msprop:Generator_UserTableName="CapitalContable" msprop:Generator_RowEvArgName="CapitalContableRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CveCuenta" msprop:Generator_ColumnVarNameInTable="columnCveCuenta" msprop:Generator_ColumnPropNameInRow="CveCuenta" msprop:Generator_ColumnPropNameInTable="CveCuentaColumn" msprop:Generator_UserColumnName="CveCuenta" type="xs:int" />
@@ -297,7 +307,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="PasivoCortoPlazo" msprop:Generator_TableClassName="PasivoCortoPlazoDataTable" msprop:Generator_TableVarName="tablePasivoCortoPlazo" msprop:Generator_TablePropName="PasivoCortoPlazo" msprop:Generator_RowDeletingName="PasivoCortoPlazoRowDeleting" msprop:Generator_RowChangingName="PasivoCortoPlazoRowChanging" msprop:Generator_RowEvHandlerName="PasivoCortoPlazoRowChangeEventHandler" msprop:Generator_RowDeletedName="PasivoCortoPlazoRowDeleted" msprop:Generator_UserTableName="PasivoCortoPlazo" msprop:Generator_RowChangedName="PasivoCortoPlazoRowChanged" msprop:Generator_RowEvArgName="PasivoCortoPlazoRowChangeEvent" msprop:Generator_RowClassName="PasivoCortoPlazoRow">
+        <xs:element name="PasivoCortoPlazo" msprop:Generator_TableClassName="PasivoCortoPlazoDataTable" msprop:Generator_TableVarName="tablePasivoCortoPlazo" msprop:Generator_RowChangedName="PasivoCortoPlazoRowChanged" msprop:Generator_TablePropName="PasivoCortoPlazo" msprop:Generator_RowDeletingName="PasivoCortoPlazoRowDeleting" msprop:Generator_RowChangingName="PasivoCortoPlazoRowChanging" msprop:Generator_RowEvHandlerName="PasivoCortoPlazoRowChangeEventHandler" msprop:Generator_RowDeletedName="PasivoCortoPlazoRowDeleted" msprop:Generator_RowClassName="PasivoCortoPlazoRow" msprop:Generator_UserTableName="PasivoCortoPlazo" msprop:Generator_RowEvArgName="PasivoCortoPlazoRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CveCuenta" msprop:Generator_ColumnVarNameInTable="columnCveCuenta" msprop:Generator_ColumnPropNameInRow="CveCuenta" msprop:Generator_ColumnPropNameInTable="CveCuentaColumn" msprop:Generator_UserColumnName="CveCuenta" type="xs:int" />
@@ -311,7 +321,7 @@
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="PasivoLargoPlazo" msprop:Generator_TableClassName="PasivoLargoPlazoDataTable" msprop:Generator_TableVarName="tablePasivoLargoPlazo" msprop:Generator_TablePropName="PasivoLargoPlazo" msprop:Generator_RowDeletingName="PasivoLargoPlazoRowDeleting" msprop:Generator_RowChangingName="PasivoLargoPlazoRowChanging" msprop:Generator_RowEvHandlerName="PasivoLargoPlazoRowChangeEventHandler" msprop:Generator_RowDeletedName="PasivoLargoPlazoRowDeleted" msprop:Generator_UserTableName="PasivoLargoPlazo" msprop:Generator_RowChangedName="PasivoLargoPlazoRowChanged" msprop:Generator_RowEvArgName="PasivoLargoPlazoRowChangeEvent" msprop:Generator_RowClassName="PasivoLargoPlazoRow">
+        <xs:element name="PasivoLargoPlazo" msprop:Generator_TableClassName="PasivoLargoPlazoDataTable" msprop:Generator_TableVarName="tablePasivoLargoPlazo" msprop:Generator_RowChangedName="PasivoLargoPlazoRowChanged" msprop:Generator_TablePropName="PasivoLargoPlazo" msprop:Generator_RowDeletingName="PasivoLargoPlazoRowDeleting" msprop:Generator_RowChangingName="PasivoLargoPlazoRowChanging" msprop:Generator_RowEvHandlerName="PasivoLargoPlazoRowChangeEventHandler" msprop:Generator_RowDeletedName="PasivoLargoPlazoRowDeleted" msprop:Generator_RowClassName="PasivoLargoPlazoRow" msprop:Generator_UserTableName="PasivoLargoPlazo" msprop:Generator_RowEvArgName="PasivoLargoPlazoRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CveCuenta" msprop:Generator_ColumnVarNameInTable="columnCveCuenta" msprop:Generator_ColumnPropNameInRow="CveCuenta" msprop:Generator_ColumnPropNameInTable="CveCuentaColumn" msprop:Generator_UserColumnName="CveCuenta" type="xs:int" />

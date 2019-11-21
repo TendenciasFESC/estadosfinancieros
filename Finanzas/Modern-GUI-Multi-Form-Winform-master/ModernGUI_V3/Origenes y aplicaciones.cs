@@ -397,5 +397,10 @@ namespace ModernGUI_V3
         {
             this.Close();
         }
+
+        private void label35_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
