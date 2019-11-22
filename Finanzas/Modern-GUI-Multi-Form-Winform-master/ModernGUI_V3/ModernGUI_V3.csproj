@@ -37,6 +37,7 @@
     <Reference Include="System" />
     <Reference Include="System.Activities" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -78,6 +79,12 @@
     <Compile Include="BalanceGral.Designer.cs">
       <DependentUpon>BalanceGral.cs</DependentUpon>
     </Compile>
+    <Compile Include="graficas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="graficas.Designer.cs">
+      <DependentUpon>graficas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Origenes y aplicaciones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="graficas.resx">
+      <DependentUpon>graficas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Origenes y aplicaciones.resx">
       <DependentUpon>Origenes y aplicaciones.cs</DependentUpon>
