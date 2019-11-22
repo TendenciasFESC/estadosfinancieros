@@ -157,6 +157,7 @@
     <Content Include="finanzas.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <None Include="Resources\menu-png-icon-21.jpg.png" />
     <None Include="Resources\Button-Close-%2832%29_1.png" />
     <None Include="Resources\Logo-unam.png" />
     <None Include="Resources\Finanzas-definicion.png" />
