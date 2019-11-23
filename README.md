@@ -7,4 +7,4 @@ open file icon by inipagistudio
 
 eraser icon by Freepik
 
-Bar Char icon by Alfredo Hernandez
+Bar Chart icon by Alfredo Hernandez
