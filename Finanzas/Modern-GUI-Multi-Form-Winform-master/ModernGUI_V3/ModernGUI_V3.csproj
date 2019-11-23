@@ -67,6 +67,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>finanzasDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="FlujoEfectivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FlujoEfectivo.Designer.cs">
+      <DependentUpon>FlujoEfectivo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Catalogo.resx">
       <DependentUpon>Catalogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FlujoEfectivo.resx">
+      <DependentUpon>FlujoEfectivo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
