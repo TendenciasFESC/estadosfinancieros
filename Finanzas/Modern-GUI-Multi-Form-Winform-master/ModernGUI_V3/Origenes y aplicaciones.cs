@@ -407,5 +407,23 @@ namespace ModernGUI_V3
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                shareddata.Instance.activo1 = double.Parse(tactivos1.Text);
+                shareddata.Instance.pasivo1 = double.Parse(tpasivo2.Text);
+                shareddata.Instance.capital1 = double.Parse(tcapital1.Text);
+                shareddata.Instance.pascap1 = double.Parse(tpc1.Text);
+                graficas graf = new graficas();
+                graf.Show();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
     }
 }

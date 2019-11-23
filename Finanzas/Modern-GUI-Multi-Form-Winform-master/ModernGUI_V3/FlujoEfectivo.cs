@@ -391,6 +391,11 @@ namespace ModernGUI_V3
         {
             guardadArchivo();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
     
 }

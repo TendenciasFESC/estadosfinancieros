@@ -23,8 +23,13 @@ namespace ModernGUI_V3
 
         private void graficas_Load(object sender, EventArgs e)
         {
-            string[] series = { "Total activos", "Total pasivos", "Total capital" };
-            int[] puntos = { 23, 10, 70 };
+            string[] series = { "Total activos", "Total pasivos", "Total capital", "Total pasivo mas capital" };
+            double[] puntos = new double[4];
+
+            puntos[0] = shareddata.Instance.activo1;
+            puntos[1] = shareddata.Instance.pasivo1;
+            puntos[2] = shareddata.Instance.capital1;
+            puntos[3] = shareddata.Instance.pascap1;
 
             chart1.Palette = ChartColorPalette.Pastel;
             chart1.Titles.Add("2017");

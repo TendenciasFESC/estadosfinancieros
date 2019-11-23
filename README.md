@@ -6,3 +6,5 @@ add file icon by Creattica Creative Agency
 open file icon by inipagistudio
 
 eraser icon by Freepik
+
+Bar Char icon by Alfredo Hernandez
