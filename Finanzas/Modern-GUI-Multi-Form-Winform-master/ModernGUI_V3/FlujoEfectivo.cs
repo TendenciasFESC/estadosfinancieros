@@ -89,7 +89,6 @@ namespace ModernGUI_V3
             try
             {
                 StreamReader sr = new StreamReader(Application.StartupPath + "\\src\\catalogo_de_cuentas.txt");
-                //StreamReader sr = new StreamReader(Properties.Resources.catalogo_de_cuentas);
                 line = sr.ReadLine();
                 while (line != null)
                 {
@@ -140,10 +139,12 @@ namespace ModernGUI_V3
                 }
                 if (flag == true)
                 {
-                    String line;
-                    List<String> lista = new List<String>();
+                    borrarTodo();
                     try
                     {
+                        borrarTodo();
+                        String line;
+                        List<String> lista = new List<String>();
                         StreamReader sr = new StreamReader(ruta + "\\op.txt");
                         line = sr.ReadLine();
                         int x = 0;
@@ -164,21 +165,35 @@ namespace ModernGUI_V3
                                 lista1.SubItems.Add(buff[2]);
                                 listView1.Items.Add(lista1);
                                 x = 0;
-                            }
-                            buff[x] = par;
-                            Console.WriteLine(buff[x]);
-                            x++;
-                        }
 
+                            }
+                            else
+                            {
+                                buff[x] = par; ;
+                                x++;
+                            }
+
+                        }
+                        sumaTotal();
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine("Exception: " + e.Message);
+                    }
+                    try
+                    {
+                        String line;
+                        List<String> lista = new List<String>();
                         StreamReader sf = new StreamReader(ruta + "\\fi.txt");
-                        line = sr.ReadLine();
-                        x = 0;
+                        line = sf.ReadLine();
+                        int x = 0;
                         while (line != null)
                         {
                             lista.Add(line);
                             line = sf.ReadLine();
                         }
-                        sr.Close();
+                        sf.Close();
+                        string[] buff = new string[3];
                         foreach (string par in lista)
                         {
                             if (x >= 2)
@@ -190,19 +205,33 @@ namespace ModernGUI_V3
                                 listView2.Items.Add(lista1);
                                 x = 0;
                             }
-                            buff[x] = par;
-                            Console.WriteLine(buff[x]);
-                            x++;
+                            else
+                            {
+                                buff[x] = par;
+                                x++;
+                            }
+
                         }
+                        sumaTotal();
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine("Exception: " + e.Message);
+                    }
+                    try
+                    {
+                        String line;
+                        List<String> lista = new List<String>();
                         StreamReader si = new StreamReader(ruta + "\\in.txt");
-                        line = sr.ReadLine();
-                        x = 0;
+                        line = si.ReadLine();
+                        int x = 0;
                         while (line != null)
                         {
                             lista.Add(line);
                             line = si.ReadLine();
                         }
-                        sr.Close();
+                        si.Close();
+                        string[] buff = new string[3];
                         foreach (string par in lista)
                         {
                             if (x >= 2)
@@ -214,8 +243,12 @@ namespace ModernGUI_V3
                                 listView3.Items.Add(lista1);
                                 x = 0;
                             }
-                            buff[x] = par;
-                            x++;
+                            else
+                            {
+                                buff[x] = par;
+                                x++;
+                            }
+
                         }
                         sumaTotal();
                     }
@@ -224,6 +257,34 @@ namespace ModernGUI_V3
                         Console.WriteLine("Exception: " + e.Message);
                     }
                 }
+            }
+        }
+
+        public void borrarTodo()
+        {
+            if (listView1.SelectedItems != null)
+            {
+                foreach (ListViewItem lista in listView1.Items)
+                {
+                    lista.Remove();
+                }
+                sumaTotal();
+            }
+            if (listView2.SelectedItems != null)
+            {
+                foreach (ListViewItem lista in listView2.Items)
+                {
+                    lista.Remove();
+                }
+                sumaTotal();
+            }
+            if (listView3.SelectedItems != null)
+            {
+                foreach (ListViewItem lista in listView3.Items)
+                {
+                    lista.Remove();
+                }
+                sumaTotal();
             }
         }
 
@@ -286,6 +347,7 @@ namespace ModernGUI_V3
 
         private void buttonAdd_Click(object sender, EventArgs e)
         {
+
             if (comboTipo.SelectedIndex >= 0 && comboSigno.SelectedIndex >= 0 && !(string.IsNullOrEmpty(tbSaldos.Text)) && comboCuenta.SelectedIndex >= 0)
             {
                 switch (comboTipo.SelectedIndex)
