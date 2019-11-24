@@ -76,7 +76,7 @@ namespace ModernGUI_V3
                 serie.Label = puntos[i].ToString();
 
                 serie.Points.Add(puntos[i]);
-                //prueba
+                //prueba nueva
             }
         }
 
