@@ -17,6 +17,47 @@ namespace ModernGUI_V3
             InitializeComponent();
         }
 
+        private void visibilidad1()
+        {label17.Visible = true;label109.Visible = true;label105.Visible = true;label106.Visible = true;label101.Visible = true;label102.Visible = true;
+            label37.Visible = true;label38.Visible = true;label39.Visible = true;
+            label40.Visible = true; label41.Visible = true;label42.Visible = true; label43.Visible = true;label44.Visible = true;label45.Visible = true;label46.Visible = true;label47.Visible = true; label48.Visible = true;label49.Visible = true;
+            label50.Visible = true;label51.Visible = true;label52.Visible = true;label53.Visible = true;label54.Visible = true;label55.Visible = true;label56.Visible = true; label57.Visible = true; label58.Visible = true;label59.Visible = true;
+            label60.Visible = true; label61.Visible = true;label62.Visible = true; label63.Visible = true; label64.Visible = true;label65.Visible = true;label66.Visible = true;label67.Visible = true;label68.Visible = true;
+        }
+
+        private void visibilidad2()
+        {
+            label107.Visible = true;
+            label108.Visible = true;
+            label110.Visible = true;
+            label111.Visible = true;
+            label103.Visible = true;
+            label104.Visible = true;
+            label69.Visible = true;
+            label70.Visible = true;label71.Visible = true;label72.Visible = true;label73.Visible = true; label74.Visible = true;label75.Visible = true;label76.Visible = true;label77.Visible = true;label78.Visible = true;label79.Visible = true;
+            label80.Visible = true;
+            label81.Visible = true;
+            label82.Visible = true;
+            label83.Visible = true;
+            label84.Visible = true;
+            label85.Visible = true;
+            label86.Visible = true;
+            label87.Visible = true;
+            label88.Visible = true;
+            label89.Visible = true;
+            label90.Visible = true;
+            label91.Visible = true;
+            label92.Visible = true;
+            label93.Visible = true;
+            label94.Visible = true;
+            label95.Visible = true;
+            label96.Visible = true;
+            label97.Visible = true;
+            label98.Visible = true;
+            label99.Visible = true;
+            label100.Visible = true;
+            label107.Visible = true;
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -24,6 +65,8 @@ namespace ModernGUI_V3
                 tactivos1.Text = (double.Parse(textBox1.Text) + double.Parse(textBox3.Text) + double.Parse(textBox5.Text) + double.Parse(textBox7.Text) + double.Parse(textBox9.Text) + double.Parse(textBox11.Text) + double.Parse(textBox13.Text)).ToString();
                 tactivos2.Text = (double.Parse(textBox2.Text) + double.Parse(textBox4.Text) + double.Parse(textBox6.Text) + double.Parse(textBox8.Text) + double.Parse(textBox10.Text) + double.Parse(textBox12.Text) + double.Parse(textBox14.Text)).ToString();
                 button2.Enabled = true;
+                tactivos1.Visible = true;
+                tactivos2.Visible = true;
             }
             catch (Exception)
             {
@@ -40,6 +83,8 @@ namespace ModernGUI_V3
                 tpasivo1.Text = (double.Parse(textBox15.Text)+double.Parse(textBox17.Text) + double.Parse(textBox19.Text) + double.Parse(textBox21.Text) + double.Parse(textBox23.Text) + double.Parse(textBox25.Text) + double.Parse(textBox27.Text)).ToString();
                 tpasivo2.Text = (double.Parse(textBox16.Text)+double.Parse(textBox18.Text) + double.Parse(textBox20.Text) + double.Parse(textBox22.Text) + double.Parse(textBox24.Text) + double.Parse(textBox26.Text) + double.Parse(textBox28.Text)).ToString();
                 button3.Enabled = true;
+                tpasivo1.Visible = true;
+                tpasivo2.Visible = true;
             }
             catch (Exception)
             {
@@ -59,6 +104,10 @@ namespace ModernGUI_V3
                 tpc2.Text = (double.Parse(tcapital2.Text) + double.Parse(tpasivo2.Text)).ToString();
 
                 button4.Enabled = true;
+                tcapital1.Visible = true;
+                tcapital2.Visible = true;
+                tpc1.Visible = true;
+                tpc2.Visible = true;
             }
             catch (Exception)
             {
@@ -255,6 +304,7 @@ namespace ModernGUI_V3
                     label105.Text = Convert.ToString(0); ;
                 }
 
+                visibilidad1();
                 double taumento;
                 taumento = (double.Parse(label17.Text)+double.Parse(label37.Text) + double.Parse(label39.Text) + double.Parse(label41.Text) + double.Parse(label43.Text) + double.Parse(label45.Text) + double.Parse(label47.Text) + double.Parse(label49.Text) + double.Parse(label51.Text) + double.Parse(label53.Text) + double.Parse(label55.Text) + double.Parse(label57.Text) + double.Parse(label59.Text) + double.Parse(label61.Text) + double.Parse(label63.Text) + double.Parse(label65.Text) + double.Parse(label67.Text) + double.Parse(label105.Text));
                 label101.Text = Convert.ToString(taumento);
@@ -459,7 +509,10 @@ namespace ModernGUI_V3
                 }
                 label103.Text = Convert.ToString(double.Parse(label110.Text) + double.Parse(label69.Text) + double.Parse(label71.Text) + double.Parse(label73.Text) + double.Parse(label75.Text) + double.Parse(label77.Text) + double.Parse(label79.Text) + double.Parse(label81.Text) + double.Parse(label83.Text) + double.Parse(label85.Text) + double.Parse(label87.Text) + double.Parse(label89.Text) + double.Parse(label91.Text) + double.Parse(label93.Text) + double.Parse(label95.Text) + double.Parse(label97.Text) + double.Parse(label99.Text) + double.Parse(label107.Text));
                 label104.Text = Convert.ToString(double.Parse(label111.Text) + double.Parse(label70.Text) + double.Parse(label72.Text) + double.Parse(label74.Text) + double.Parse(label76.Text) + double.Parse(label78.Text) + double.Parse(label80.Text) + double.Parse(label82.Text) + double.Parse(label84.Text) + double.Parse(label86.Text) + double.Parse(label88.Text) + double.Parse(label90.Text) + double.Parse(label92.Text) + double.Parse(label94.Text) + double.Parse(label96.Text) + double.Parse(label98.Text) + double.Parse(label100.Text) + double.Parse(label108.Text));
+             visibilidad2();
             }
+
+            
             catch (Exception)
             {
                 MessageBox.Show("Faltan datos o formato incorrecto!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);

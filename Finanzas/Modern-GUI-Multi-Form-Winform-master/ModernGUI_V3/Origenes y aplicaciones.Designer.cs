@@ -204,6 +204,7 @@
             this.label108.Size = new System.Drawing.Size(89, 25);
             this.label108.TabIndex = 311;
             this.label108.Text = "Activos";
+            this.label108.Visible = false;
             // 
             // label107
             // 
@@ -214,6 +215,7 @@
             this.label107.Size = new System.Drawing.Size(85, 25);
             this.label107.TabIndex = 310;
             this.label107.Text = "prueba";
+            this.label107.Visible = false;
             // 
             // label106
             // 
@@ -224,6 +226,7 @@
             this.label106.Size = new System.Drawing.Size(85, 25);
             this.label106.TabIndex = 309;
             this.label106.Text = "prueba";
+            this.label106.Visible = false;
             // 
             // label105
             // 
@@ -234,6 +237,7 @@
             this.label105.Size = new System.Drawing.Size(85, 25);
             this.label105.TabIndex = 308;
             this.label105.Text = "prueba";
+            this.label105.Visible = false;
             // 
             // label104
             // 
@@ -244,6 +248,7 @@
             this.label104.Size = new System.Drawing.Size(95, 25);
             this.label104.TabIndex = 307;
             this.label104.Text = "Pasivos";
+            this.label104.Visible = false;
             // 
             // label103
             // 
@@ -254,6 +259,7 @@
             this.label103.Size = new System.Drawing.Size(85, 25);
             this.label103.TabIndex = 306;
             this.label103.Text = "prueba";
+            this.label103.Visible = false;
             // 
             // label102
             // 
@@ -264,6 +270,7 @@
             this.label102.Size = new System.Drawing.Size(85, 25);
             this.label102.TabIndex = 305;
             this.label102.Text = "prueba";
+            this.label102.Visible = false;
             // 
             // label101
             // 
@@ -274,6 +281,7 @@
             this.label101.Size = new System.Drawing.Size(85, 25);
             this.label101.TabIndex = 304;
             this.label101.Text = "prueba";
+            this.label101.Visible = false;
             // 
             // label100
             // 
@@ -284,6 +292,7 @@
             this.label100.Size = new System.Drawing.Size(89, 25);
             this.label100.TabIndex = 303;
             this.label100.Text = "Activos";
+            this.label100.Visible = false;
             // 
             // label99
             // 
@@ -294,6 +303,7 @@
             this.label99.Size = new System.Drawing.Size(85, 25);
             this.label99.TabIndex = 302;
             this.label99.Text = "prueba";
+            this.label99.Visible = false;
             // 
             // label98
             // 
@@ -304,6 +314,7 @@
             this.label98.Size = new System.Drawing.Size(89, 25);
             this.label98.TabIndex = 301;
             this.label98.Text = "Activos";
+            this.label98.Visible = false;
             // 
             // label97
             // 
@@ -314,6 +325,7 @@
             this.label97.Size = new System.Drawing.Size(85, 25);
             this.label97.TabIndex = 300;
             this.label97.Text = "prueba";
+            this.label97.Visible = false;
             // 
             // label96
             // 
@@ -324,6 +336,7 @@
             this.label96.Size = new System.Drawing.Size(89, 25);
             this.label96.TabIndex = 299;
             this.label96.Text = "Activos";
+            this.label96.Visible = false;
             // 
             // label95
             // 
@@ -334,6 +347,7 @@
             this.label95.Size = new System.Drawing.Size(85, 25);
             this.label95.TabIndex = 298;
             this.label95.Text = "prueba";
+            this.label95.Visible = false;
             // 
             // label94
             // 
@@ -344,6 +358,7 @@
             this.label94.Size = new System.Drawing.Size(89, 25);
             this.label94.TabIndex = 297;
             this.label94.Text = "Activos";
+            this.label94.Visible = false;
             // 
             // label93
             // 
@@ -354,6 +369,7 @@
             this.label93.Size = new System.Drawing.Size(85, 25);
             this.label93.TabIndex = 296;
             this.label93.Text = "prueba";
+            this.label93.Visible = false;
             // 
             // label92
             // 
@@ -364,6 +380,7 @@
             this.label92.Size = new System.Drawing.Size(89, 25);
             this.label92.TabIndex = 295;
             this.label92.Text = "Activos";
+            this.label92.Visible = false;
             // 
             // label91
             // 
@@ -374,6 +391,7 @@
             this.label91.Size = new System.Drawing.Size(85, 25);
             this.label91.TabIndex = 294;
             this.label91.Text = "prueba";
+            this.label91.Visible = false;
             // 
             // label90
             // 
@@ -384,6 +402,7 @@
             this.label90.Size = new System.Drawing.Size(89, 25);
             this.label90.TabIndex = 293;
             this.label90.Text = "Activos";
+            this.label90.Visible = false;
             // 
             // label89
             // 
@@ -394,6 +413,7 @@
             this.label89.Size = new System.Drawing.Size(85, 25);
             this.label89.TabIndex = 292;
             this.label89.Text = "prueba";
+            this.label89.Visible = false;
             // 
             // label88
             // 
@@ -404,6 +424,7 @@
             this.label88.Size = new System.Drawing.Size(89, 25);
             this.label88.TabIndex = 291;
             this.label88.Text = "Activos";
+            this.label88.Visible = false;
             // 
             // label87
             // 
@@ -414,6 +435,7 @@
             this.label87.Size = new System.Drawing.Size(85, 25);
             this.label87.TabIndex = 290;
             this.label87.Text = "prueba";
+            this.label87.Visible = false;
             // 
             // label86
             // 
@@ -424,6 +446,7 @@
             this.label86.Size = new System.Drawing.Size(89, 25);
             this.label86.TabIndex = 289;
             this.label86.Text = "Activos";
+            this.label86.Visible = false;
             // 
             // label85
             // 
@@ -434,6 +457,7 @@
             this.label85.Size = new System.Drawing.Size(85, 25);
             this.label85.TabIndex = 288;
             this.label85.Text = "prueba";
+            this.label85.Visible = false;
             // 
             // label84
             // 
@@ -444,6 +468,7 @@
             this.label84.Size = new System.Drawing.Size(89, 25);
             this.label84.TabIndex = 287;
             this.label84.Text = "Activos";
+            this.label84.Visible = false;
             // 
             // label83
             // 
@@ -454,6 +479,7 @@
             this.label83.Size = new System.Drawing.Size(85, 25);
             this.label83.TabIndex = 286;
             this.label83.Text = "prueba";
+            this.label83.Visible = false;
             // 
             // label82
             // 
@@ -464,6 +490,7 @@
             this.label82.Size = new System.Drawing.Size(89, 25);
             this.label82.TabIndex = 285;
             this.label82.Text = "Activos";
+            this.label82.Visible = false;
             // 
             // label81
             // 
@@ -474,6 +501,7 @@
             this.label81.Size = new System.Drawing.Size(85, 25);
             this.label81.TabIndex = 284;
             this.label81.Text = "prueba";
+            this.label81.Visible = false;
             // 
             // label80
             // 
@@ -484,6 +512,7 @@
             this.label80.Size = new System.Drawing.Size(89, 25);
             this.label80.TabIndex = 283;
             this.label80.Text = "Activos";
+            this.label80.Visible = false;
             // 
             // label79
             // 
@@ -494,6 +523,7 @@
             this.label79.Size = new System.Drawing.Size(85, 25);
             this.label79.TabIndex = 282;
             this.label79.Text = "prueba";
+            this.label79.Visible = false;
             // 
             // label78
             // 
@@ -504,6 +534,7 @@
             this.label78.Size = new System.Drawing.Size(89, 25);
             this.label78.TabIndex = 281;
             this.label78.Text = "Activos";
+            this.label78.Visible = false;
             // 
             // label77
             // 
@@ -514,6 +545,7 @@
             this.label77.Size = new System.Drawing.Size(85, 25);
             this.label77.TabIndex = 280;
             this.label77.Text = "prueba";
+            this.label77.Visible = false;
             // 
             // label76
             // 
@@ -524,6 +556,7 @@
             this.label76.Size = new System.Drawing.Size(89, 25);
             this.label76.TabIndex = 279;
             this.label76.Text = "Activos";
+            this.label76.Visible = false;
             // 
             // label75
             // 
@@ -534,6 +567,7 @@
             this.label75.Size = new System.Drawing.Size(85, 25);
             this.label75.TabIndex = 278;
             this.label75.Text = "prueba";
+            this.label75.Visible = false;
             // 
             // label74
             // 
@@ -544,6 +578,7 @@
             this.label74.Size = new System.Drawing.Size(89, 25);
             this.label74.TabIndex = 277;
             this.label74.Text = "Activos";
+            this.label74.Visible = false;
             // 
             // label73
             // 
@@ -554,6 +589,7 @@
             this.label73.Size = new System.Drawing.Size(85, 25);
             this.label73.TabIndex = 276;
             this.label73.Text = "prueba";
+            this.label73.Visible = false;
             // 
             // label72
             // 
@@ -564,6 +600,7 @@
             this.label72.Size = new System.Drawing.Size(89, 25);
             this.label72.TabIndex = 275;
             this.label72.Text = "Activos";
+            this.label72.Visible = false;
             // 
             // label71
             // 
@@ -574,6 +611,7 @@
             this.label71.Size = new System.Drawing.Size(85, 25);
             this.label71.TabIndex = 274;
             this.label71.Text = "prueba";
+            this.label71.Visible = false;
             // 
             // label70
             // 
@@ -584,6 +622,7 @@
             this.label70.Size = new System.Drawing.Size(89, 25);
             this.label70.TabIndex = 273;
             this.label70.Text = "Activos";
+            this.label70.Visible = false;
             // 
             // label69
             // 
@@ -594,6 +633,7 @@
             this.label69.Size = new System.Drawing.Size(85, 25);
             this.label69.TabIndex = 272;
             this.label69.Text = "prueba";
+            this.label69.Visible = false;
             // 
             // label68
             // 
@@ -604,6 +644,7 @@
             this.label68.Size = new System.Drawing.Size(85, 25);
             this.label68.TabIndex = 271;
             this.label68.Text = "prueba";
+            this.label68.Visible = false;
             // 
             // label67
             // 
@@ -614,6 +655,7 @@
             this.label67.Size = new System.Drawing.Size(85, 25);
             this.label67.TabIndex = 270;
             this.label67.Text = "prueba";
+            this.label67.Visible = false;
             // 
             // label66
             // 
@@ -624,6 +666,7 @@
             this.label66.Size = new System.Drawing.Size(85, 25);
             this.label66.TabIndex = 269;
             this.label66.Text = "prueba";
+            this.label66.Visible = false;
             // 
             // label65
             // 
@@ -634,6 +677,7 @@
             this.label65.Size = new System.Drawing.Size(85, 25);
             this.label65.TabIndex = 268;
             this.label65.Text = "prueba";
+            this.label65.Visible = false;
             // 
             // label64
             // 
@@ -644,6 +688,7 @@
             this.label64.Size = new System.Drawing.Size(85, 25);
             this.label64.TabIndex = 267;
             this.label64.Text = "prueba";
+            this.label64.Visible = false;
             // 
             // label63
             // 
@@ -654,6 +699,7 @@
             this.label63.Size = new System.Drawing.Size(85, 25);
             this.label63.TabIndex = 266;
             this.label63.Text = "prueba";
+            this.label63.Visible = false;
             // 
             // label62
             // 
@@ -664,6 +710,7 @@
             this.label62.Size = new System.Drawing.Size(85, 25);
             this.label62.TabIndex = 265;
             this.label62.Text = "prueba";
+            this.label62.Visible = false;
             // 
             // label61
             // 
@@ -674,6 +721,7 @@
             this.label61.Size = new System.Drawing.Size(85, 25);
             this.label61.TabIndex = 264;
             this.label61.Text = "prueba";
+            this.label61.Visible = false;
             // 
             // label60
             // 
@@ -684,6 +732,7 @@
             this.label60.Size = new System.Drawing.Size(85, 25);
             this.label60.TabIndex = 263;
             this.label60.Text = "prueba";
+            this.label60.Visible = false;
             // 
             // label59
             // 
@@ -694,6 +743,7 @@
             this.label59.Size = new System.Drawing.Size(85, 25);
             this.label59.TabIndex = 262;
             this.label59.Text = "prueba";
+            this.label59.Visible = false;
             // 
             // label58
             // 
@@ -704,6 +754,7 @@
             this.label58.Size = new System.Drawing.Size(85, 25);
             this.label58.TabIndex = 261;
             this.label58.Text = "prueba";
+            this.label58.Visible = false;
             // 
             // label57
             // 
@@ -714,6 +765,7 @@
             this.label57.Size = new System.Drawing.Size(85, 25);
             this.label57.TabIndex = 260;
             this.label57.Text = "prueba";
+            this.label57.Visible = false;
             // 
             // label56
             // 
@@ -724,6 +776,7 @@
             this.label56.Size = new System.Drawing.Size(85, 25);
             this.label56.TabIndex = 259;
             this.label56.Text = "prueba";
+            this.label56.Visible = false;
             // 
             // label55
             // 
@@ -734,6 +787,7 @@
             this.label55.Size = new System.Drawing.Size(85, 25);
             this.label55.TabIndex = 258;
             this.label55.Text = "prueba";
+            this.label55.Visible = false;
             // 
             // label54
             // 
@@ -744,6 +798,7 @@
             this.label54.Size = new System.Drawing.Size(85, 25);
             this.label54.TabIndex = 257;
             this.label54.Text = "prueba";
+            this.label54.Visible = false;
             // 
             // label53
             // 
@@ -754,6 +809,7 @@
             this.label53.Size = new System.Drawing.Size(85, 25);
             this.label53.TabIndex = 256;
             this.label53.Text = "prueba";
+            this.label53.Visible = false;
             // 
             // label52
             // 
@@ -764,16 +820,18 @@
             this.label52.Size = new System.Drawing.Size(85, 25);
             this.label52.TabIndex = 255;
             this.label52.Text = "prueba";
+            this.label52.Visible = false;
             // 
             // label51
             // 
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(572, 308);
+            this.label51.Location = new System.Drawing.Point(572, 307);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(85, 25);
             this.label51.TabIndex = 254;
             this.label51.Text = "prueba";
+            this.label51.Visible = false;
             // 
             // label50
             // 
@@ -784,6 +842,7 @@
             this.label50.Size = new System.Drawing.Size(85, 25);
             this.label50.TabIndex = 253;
             this.label50.Text = "prueba";
+            this.label50.Visible = false;
             // 
             // label49
             // 
@@ -794,6 +853,7 @@
             this.label49.Size = new System.Drawing.Size(85, 25);
             this.label49.TabIndex = 252;
             this.label49.Text = "prueba";
+            this.label49.Visible = false;
             // 
             // label48
             // 
@@ -804,6 +864,7 @@
             this.label48.Size = new System.Drawing.Size(85, 25);
             this.label48.TabIndex = 251;
             this.label48.Text = "prueba";
+            this.label48.Visible = false;
             // 
             // label47
             // 
@@ -814,16 +875,18 @@
             this.label47.Size = new System.Drawing.Size(85, 25);
             this.label47.TabIndex = 250;
             this.label47.Text = "prueba";
+            this.label47.Visible = false;
             // 
             // label46
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(747, 131);
+            this.label46.Location = new System.Drawing.Point(747, 128);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(85, 25);
             this.label46.TabIndex = 249;
             this.label46.Text = "prueba";
+            this.label46.Visible = false;
             // 
             // label45
             // 
@@ -834,6 +897,7 @@
             this.label45.Size = new System.Drawing.Size(85, 25);
             this.label45.TabIndex = 248;
             this.label45.Text = "prueba";
+            this.label45.Visible = false;
             // 
             // label44
             // 
@@ -844,6 +908,7 @@
             this.label44.Size = new System.Drawing.Size(85, 25);
             this.label44.TabIndex = 247;
             this.label44.Text = "prueba";
+            this.label44.Visible = false;
             // 
             // label43
             // 
@@ -854,6 +919,7 @@
             this.label43.Size = new System.Drawing.Size(85, 25);
             this.label43.TabIndex = 246;
             this.label43.Text = "prueba";
+            this.label43.Visible = false;
             // 
             // label42
             // 
@@ -864,6 +930,7 @@
             this.label42.Size = new System.Drawing.Size(85, 25);
             this.label42.TabIndex = 245;
             this.label42.Text = "prueba";
+            this.label42.Visible = false;
             // 
             // label41
             // 
@@ -874,6 +941,7 @@
             this.label41.Size = new System.Drawing.Size(85, 25);
             this.label41.TabIndex = 244;
             this.label41.Text = "prueba";
+            this.label41.Visible = false;
             // 
             // label40
             // 
@@ -884,6 +952,7 @@
             this.label40.Size = new System.Drawing.Size(85, 25);
             this.label40.TabIndex = 243;
             this.label40.Text = "prueba";
+            this.label40.Visible = false;
             // 
             // label39
             // 
@@ -894,6 +963,7 @@
             this.label39.Size = new System.Drawing.Size(85, 25);
             this.label39.TabIndex = 242;
             this.label39.Text = "prueba";
+            this.label39.Visible = false;
             // 
             // label38
             // 
@@ -904,6 +974,7 @@
             this.label38.Size = new System.Drawing.Size(85, 25);
             this.label38.TabIndex = 241;
             this.label38.Text = "prueba";
+            this.label38.Visible = false;
             // 
             // label37
             // 
@@ -914,6 +985,7 @@
             this.label37.Size = new System.Drawing.Size(85, 25);
             this.label37.TabIndex = 240;
             this.label37.Text = "prueba";
+            this.label37.Visible = false;
             // 
             // tpc2
             // 
@@ -924,6 +996,7 @@
             this.tpc2.Size = new System.Drawing.Size(85, 25);
             this.tpc2.TabIndex = 239;
             this.tpc2.Text = "prueba";
+            this.tpc2.Visible = false;
             // 
             // tpc1
             // 
@@ -934,6 +1007,7 @@
             this.tpc1.Size = new System.Drawing.Size(85, 25);
             this.tpc1.TabIndex = 238;
             this.tpc1.Text = "prueba";
+            this.tpc1.Visible = false;
             // 
             // tcapital2
             // 
@@ -944,6 +1018,7 @@
             this.tcapital2.Size = new System.Drawing.Size(85, 25);
             this.tcapital2.TabIndex = 237;
             this.tcapital2.Text = "prueba";
+            this.tcapital2.Visible = false;
             // 
             // tcapital1
             // 
@@ -954,6 +1029,7 @@
             this.tcapital1.Size = new System.Drawing.Size(85, 25);
             this.tcapital1.TabIndex = 236;
             this.tcapital1.Text = "prueba";
+            this.tcapital1.Visible = false;
             // 
             // tpasivo2
             // 
@@ -964,6 +1040,7 @@
             this.tpasivo2.Size = new System.Drawing.Size(85, 25);
             this.tpasivo2.TabIndex = 235;
             this.tpasivo2.Text = "prueba";
+            this.tpasivo2.Visible = false;
             // 
             // tpasivo1
             // 
@@ -974,6 +1051,7 @@
             this.tpasivo1.Size = new System.Drawing.Size(85, 25);
             this.tpasivo1.TabIndex = 234;
             this.tpasivo1.Text = "prueba";
+            this.tpasivo1.Visible = false;
             // 
             // tactivos2
             // 
@@ -984,6 +1062,7 @@
             this.tactivos2.Size = new System.Drawing.Size(85, 25);
             this.tactivos2.TabIndex = 233;
             this.tactivos2.Text = "prueba";
+            this.tactivos2.Visible = false;
             // 
             // tactivos1
             // 
@@ -994,6 +1073,7 @@
             this.tactivos1.Size = new System.Drawing.Size(85, 25);
             this.tactivos1.TabIndex = 232;
             this.tactivos1.Text = "prueba";
+            this.tactivos1.Visible = false;
             // 
             // button5
             // 
@@ -1729,6 +1809,7 @@
             this.label17.Size = new System.Drawing.Size(85, 25);
             this.label17.TabIndex = 313;
             this.label17.Text = "prueba";
+            this.label17.Visible = false;
             // 
             // label109
             // 
@@ -1739,6 +1820,7 @@
             this.label109.Size = new System.Drawing.Size(85, 25);
             this.label109.TabIndex = 314;
             this.label109.Text = "prueba";
+            this.label109.Visible = false;
             // 
             // label110
             // 
@@ -1749,6 +1831,7 @@
             this.label110.Size = new System.Drawing.Size(85, 25);
             this.label110.TabIndex = 315;
             this.label110.Text = "prueba";
+            this.label110.Visible = false;
             // 
             // label111
             // 
@@ -1759,6 +1842,7 @@
             this.label111.Size = new System.Drawing.Size(89, 25);
             this.label111.TabIndex = 316;
             this.label111.Text = "Activos";
+            this.label111.Visible = false;
             // 
             // button7
             // 
