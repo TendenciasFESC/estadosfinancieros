@@ -110,6 +110,8 @@
             this.tpc1 = new System.Windows.Forms.Label();
             this.tpc2 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -424,7 +426,6 @@
             this.label23.Size = new System.Drawing.Size(265, 20);
             this.label23.TabIndex = 365;
             this.label23.Text = "Pasivo por retencion de efectivo";
-            this.label23.Visible = false;
             // 
             // textBox1
             // 
@@ -720,27 +721,28 @@
             // 
             // button1
             // 
+            this.button1.Enabled = false;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(1169, 91);
+            this.button1.Location = new System.Drawing.Point(1169, 172);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 78);
             this.button1.TabIndex = 419;
-            this.button1.Text = "Rellenar Formulario";
+            this.button1.Text = "Generar O y A";
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Enabled = false;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(1169, 183);
+            this.button2.Location = new System.Drawing.Point(1169, 79);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(84, 78);
             this.button2.TabIndex = 420;
-            this.button2.Text = "Generar O y A";
+            this.button2.Text = "Rellenar Formulario";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // tactivos1
             // 
@@ -751,6 +753,7 @@
             this.tactivos1.Size = new System.Drawing.Size(81, 20);
             this.tactivos1.TabIndex = 421;
             this.tactivos1.Text = "tactivos1";
+            this.tactivos1.Visible = false;
             // 
             // tactivos2
             // 
@@ -761,6 +764,7 @@
             this.tactivos2.Size = new System.Drawing.Size(67, 20);
             this.tactivos2.TabIndex = 422;
             this.tactivos2.Text = "label15";
+            this.tactivos2.Visible = false;
             // 
             // tpasivo1
             // 
@@ -771,6 +775,7 @@
             this.tpasivo1.Size = new System.Drawing.Size(67, 20);
             this.tpasivo1.TabIndex = 423;
             this.tpasivo1.Text = "label15";
+            this.tpasivo1.Visible = false;
             // 
             // tpasivo2
             // 
@@ -781,6 +786,8 @@
             this.tpasivo2.Size = new System.Drawing.Size(67, 20);
             this.tpasivo2.TabIndex = 424;
             this.tpasivo2.Text = "label15";
+            this.tpasivo2.Visible = false;
+            this.tpasivo2.Click += new System.EventHandler(this.tpasivo2_Click);
             // 
             // tcapital1
             // 
@@ -791,6 +798,7 @@
             this.tcapital1.Size = new System.Drawing.Size(67, 20);
             this.tcapital1.TabIndex = 425;
             this.tcapital1.Text = "label15";
+            this.tcapital1.Visible = false;
             // 
             // tcapital2
             // 
@@ -801,6 +809,7 @@
             this.tcapital2.Size = new System.Drawing.Size(67, 20);
             this.tcapital2.TabIndex = 426;
             this.tcapital2.Text = "label15";
+            this.tcapital2.Visible = false;
             // 
             // tpc1
             // 
@@ -811,6 +820,7 @@
             this.tpc1.Size = new System.Drawing.Size(67, 20);
             this.tpc1.TabIndex = 427;
             this.tpc1.Text = "label15";
+            this.tpc1.Visible = false;
             // 
             // tpc2
             // 
@@ -821,6 +831,7 @@
             this.tpc2.Size = new System.Drawing.Size(67, 20);
             this.tpc2.TabIndex = 428;
             this.tpc2.Text = "label15";
+            this.tpc2.Visible = false;
             // 
             // label15
             // 
@@ -832,12 +843,39 @@
             this.label15.TabIndex = 429;
             this.label15.Text = "A. Horizontal";
             // 
+            // button3
+            // 
+            this.button3.Enabled = false;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(1169, 262);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(84, 78);
+            this.button3.TabIndex = 430;
+            this.button3.Text = "Analisis Vertical";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // button4
+            // 
+            this.button4.Enabled = false;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(1169, 346);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(84, 78);
+            this.button4.TabIndex = 431;
+            this.button4.Text = "Analisis Horizontal";
+            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.button4.UseVisualStyleBackColor = true;
+            // 
             // Analisis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1265, 720);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.tpc2);
             this.Controls.Add(this.tpc1);
@@ -1011,5 +1049,7 @@
         private System.Windows.Forms.Label tpc1;
         private System.Windows.Forms.Label tpc2;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

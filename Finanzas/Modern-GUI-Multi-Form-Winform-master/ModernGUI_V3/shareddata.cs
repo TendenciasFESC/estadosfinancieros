@@ -36,6 +36,7 @@ namespace ModernGUI_V3
 
         public double proovedores;
         public double acreedores;
+        public double retencion;
         public double impuestos;
         public double provisiones;
         public double otros;
@@ -43,6 +44,7 @@ namespace ModernGUI_V3
 
         public double proovedores2;
         public double acreedores2;
+        public double retencion2;
         public double impuestos2;
         public double provisiones2;
         public double otros2;

@@ -142,15 +142,16 @@ namespace ModernGUI_V3
                     serie.Points.Add(puntos[i]);
                 }
 
-                string[] seriepas = { "Proveedores", "Acreedores", "Impuestos por pagat", "Provisiones", "Otros pasivos a corto plazo", "Credito hipotecario" };
-                double[] puntospas = new double[6];
+                string[] seriepas = { "Proveedores", "Acreedores", "Pasivo Por Retencion","Impuestos por pagar", "Provisiones", "Otros pasivos a corto plazo", "Credito hipotecario" };
+                double[] puntospas = new double[7];
 
                 puntospas[0] = shareddata.Instance.proovedores;
                 puntospas[1] = shareddata.Instance.acreedores;
-                puntospas[2] = shareddata.Instance.impuestos;
-                puntospas[3] = shareddata.Instance.provisiones;
-                puntospas[4] = shareddata.Instance.otros;
-                puntospas[5] = shareddata.Instance.credito;
+                puntospas[2] = shareddata.Instance.retencion;
+                puntospas[3] = shareddata.Instance.impuestos;
+                puntospas[4] = shareddata.Instance.provisiones;
+                puntospas[5] = shareddata.Instance.otros;
+                puntospas[6] = shareddata.Instance.credito;
 
                 chart3.Palette = ChartColorPalette.Pastel;
                 chart3.Titles.Add("Pasivos");
@@ -166,10 +167,11 @@ namespace ModernGUI_V3
 
                 puntospas[0] = shareddata.Instance.proovedores2;
                 puntospas[1] = shareddata.Instance.acreedores2;
-                puntospas[2] = shareddata.Instance.impuestos2;
-                puntospas[3] = shareddata.Instance.provisiones2;
-                puntospas[4] = shareddata.Instance.otros2;
-                puntospas[5] = shareddata.Instance.credito2;
+                puntospas[2] = shareddata.Instance.retencion2;
+                puntospas[3] = shareddata.Instance.impuestos2;
+                puntospas[4] = shareddata.Instance.provisiones2;
+                puntospas[5] = shareddata.Instance.otros2;
+                puntospas[6] = shareddata.Instance.credito2;
 
                 chart1.Titles.Add("Pasivos");
 

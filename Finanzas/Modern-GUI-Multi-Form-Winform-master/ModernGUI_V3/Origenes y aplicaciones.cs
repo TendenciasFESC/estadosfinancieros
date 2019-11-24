@@ -36,8 +36,8 @@ namespace ModernGUI_V3
         {
             try
             {
-                tpasivo1.Text = (double.Parse(textBox17.Text) + double.Parse(textBox19.Text) + double.Parse(textBox21.Text) + double.Parse(textBox23.Text) + double.Parse(textBox25.Text) + double.Parse(textBox27.Text)).ToString();
-                tpasivo2.Text = (double.Parse(textBox18.Text) + double.Parse(textBox20.Text) + double.Parse(textBox22.Text) + double.Parse(textBox24.Text) + double.Parse(textBox26.Text) + double.Parse(textBox28.Text)).ToString();
+                tpasivo1.Text = (double.Parse(textBox15.Text)+double.Parse(textBox17.Text) + double.Parse(textBox19.Text) + double.Parse(textBox21.Text) + double.Parse(textBox23.Text) + double.Parse(textBox25.Text) + double.Parse(textBox27.Text)).ToString();
+                tpasivo2.Text = (double.Parse(textBox16.Text)+double.Parse(textBox18.Text) + double.Parse(textBox20.Text) + double.Parse(textBox22.Text) + double.Parse(textBox24.Text) + double.Parse(textBox26.Text) + double.Parse(textBox28.Text)).ToString();
             }
             catch (Exception)
             {
@@ -482,15 +482,17 @@ namespace ModernGUI_V3
                 shareddata.Instance.edificios2 = double.Parse(textBox12.Text);
                 shareddata.Instance.softysis2 = double.Parse(textBox14.Text);
 
-                shareddata.Instance.proovedores = double.Parse(textBox17.Text);
-                shareddata.Instance.acreedores = double.Parse(textBox19.Text);
+                shareddata.Instance.proovedores = double.Parse(textBox15.Text);
+                shareddata.Instance.acreedores = double.Parse(textBox17.Text);
+                shareddata.Instance.retencion = double.Parse(textBox19.Text);
                 shareddata.Instance.impuestos = double.Parse(textBox21.Text);
                 shareddata.Instance.provisiones = double.Parse(textBox23.Text);
                 shareddata.Instance.otros = double.Parse(textBox25.Text);
                 shareddata.Instance.credito = double.Parse(textBox27.Text);
 
-                shareddata.Instance.proovedores2 = double.Parse(textBox18.Text);
-                shareddata.Instance.acreedores2 = double.Parse(textBox20.Text);
+                shareddata.Instance.proovedores2 = double.Parse(textBox16.Text);
+                shareddata.Instance.acreedores2 = double.Parse(textBox18.Text);
+                shareddata.Instance.retencion2 = double.Parse(textBox20.Text);
                 shareddata.Instance.impuestos2 = double.Parse(textBox22.Text);
                 shareddata.Instance.provisiones2 = double.Parse(textBox24.Text);
                 shareddata.Instance.otros2 = double.Parse(textBox26.Text);
