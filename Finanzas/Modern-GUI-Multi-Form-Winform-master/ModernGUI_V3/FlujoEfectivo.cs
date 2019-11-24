@@ -89,6 +89,7 @@ namespace ModernGUI_V3
             try
             {
                 StreamReader sr = new StreamReader(Application.StartupPath + "\\src\\catalogo_de_cuentas.txt");
+                //StreamReader sr = new StreamReader(Properties.Resources.catalogo_de_cuentas);
                 line = sr.ReadLine();
                 while (line != null)
                 {

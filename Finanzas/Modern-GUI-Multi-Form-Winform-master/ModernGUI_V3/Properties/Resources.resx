@@ -136,4 +136,7 @@
   <data name="menu_png_icon_21_jpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu-png-icon-21.jpg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="catalogo_de_cuentas" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\bin\Debug\src\catalogo_de_cuentas.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value>
+  </data>
 </root>

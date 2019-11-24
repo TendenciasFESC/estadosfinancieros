@@ -193,7 +193,7 @@ namespace ModernGUI_V3
             if (Application.OpenForms["Catalogo"] == null)
                 button4.BackColor = Color.FromArgb(184, 134, 11);
             if (Application.OpenForms["FlujoEfectivo"] == null)
-                button5.BackColor = Color.FromArgb(184, 234, 11);
+                button5.BackColor = Color.FromArgb(184, 134, 11);
             
         }
     }

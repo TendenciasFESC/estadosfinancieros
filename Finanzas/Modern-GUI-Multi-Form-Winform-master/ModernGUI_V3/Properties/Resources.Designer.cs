@@ -81,6 +81,33 @@ namespace ModernGUI_V3.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Bancos
+        ///Instrumentos Financieros
+        ///Clientes y Deudores Diversos
+        ///Almacen
+        ///Pagos Anticipados
+        ///Edificio
+        ///Software y Sistemas
+        ///Capital Social
+        ///Aportaciones Aumento Capital
+        ///Reservas De Capital
+        ///Otros Resultados Integrales
+        ///Utilidades Acumuladas
+        ///Proveedores
+        ///Acreedores
+        ///Pasivo Retencion De Efectivo
+        ///IMP Por Pagar
+        ///Provisiones
+        ///Otros Pasivos A Corto Plazo
+        ///Credito Hipotecario.
+        /// </summary>
+        internal static string catalogo_de_cuentas {
+            get {
+                return ResourceManager.GetString("catalogo_de_cuentas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap close_window {
