@@ -136,6 +136,7 @@
             // 
             // pictureBox2
             // 
+            this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.pictureBox2.Image = global::ModernGUI_V3.Properties.Resources.Logo_unam;
             this.pictureBox2.Location = new System.Drawing.Point(5, 531);
             this.pictureBox2.Name = "pictureBox2";

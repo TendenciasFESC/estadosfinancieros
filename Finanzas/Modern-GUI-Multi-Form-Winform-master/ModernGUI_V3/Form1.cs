@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Printing;
-
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace ModernGUI_V3
 {
@@ -17,6 +18,7 @@ namespace ModernGUI_V3
         public Form1()
         {
             InitializeComponent();
+            
         }
 
         private void utilidadbruta()
@@ -346,6 +348,11 @@ namespace ModernGUI_V3
         }
 
         private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }

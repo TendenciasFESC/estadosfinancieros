@@ -407,6 +407,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::ModernGUI_V3.Properties.Resources.Button_Close__32__1;
             this.pictureBox1.Location = new System.Drawing.Point(985, 20);
             this.pictureBox1.Name = "pictureBox1";
