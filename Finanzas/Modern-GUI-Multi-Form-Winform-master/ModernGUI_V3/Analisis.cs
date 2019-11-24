@@ -16,6 +16,12 @@ namespace ModernGUI_V3
         {
             InitializeComponent();
         }
+        double a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26,a27,a28,a29,a30,a31,a32,a33,a34,a35,a36;
+
+        private void label75_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -68,6 +74,8 @@ namespace ModernGUI_V3
             label104.Visible = true;
             label105.Visible = true;
             label106.Visible = true;
+            label107.Visible = true;
+            label108.Visible = true;
 
         }
 
@@ -157,46 +165,86 @@ namespace ModernGUI_V3
 
         }
 
+        
         private void button3_Click(object sender, EventArgs e)
         {
-            label37.Text =(Math.Round((double.Parse(textBox1.Text)*100)/double.Parse(tactivos1.Text),2)+"%").ToString();
-            label39.Text = (Math.Round((double.Parse(textBox3.Text) * 100) / double.Parse(tactivos1.Text), 2) + "%").ToString();
-            label41.Text = (Math.Round((double.Parse(textBox5.Text) * 100) / double.Parse(tactivos1.Text), 2) + "%").ToString();
-            label43.Text = (Math.Round((double.Parse(textBox7.Text) * 100) / double.Parse(tactivos1.Text), 2) + "%").ToString();
-            label45.Text = (Math.Round((double.Parse(textBox9.Text) * 100) / double.Parse(tactivos1.Text), 2) + "%").ToString();
-            label47.Text = (Math.Round((double.Parse(textBox11.Text) * 100) / double.Parse(tactivos1.Text), 2) + "%").ToString();
-            label49.Text = (Math.Round((double.Parse(textBox13.Text) * 100) / double.Parse(tactivos1.Text), 2) + "%").ToString();
-            label38.Text = (Math.Round((double.Parse(textBox2.Text) * 100) / double.Parse(tactivos2.Text), 2) + "%").ToString();
-            label40.Text = (Math.Round((double.Parse(textBox4.Text) * 100) / double.Parse(tactivos2.Text), 2) + "%").ToString();
-            label42.Text = (Math.Round((double.Parse(textBox6.Text) * 100) / double.Parse(tactivos2.Text), 2) + "%").ToString();
-            label44.Text = (Math.Round((double.Parse(textBox8.Text) * 100) / double.Parse(tactivos2.Text), 2) + "%").ToString();
-            label46.Text = (Math.Round((double.Parse(textBox10.Text) * 100) / double.Parse(tactivos2.Text), 2) + "%").ToString();
-            label48.Text = (Math.Round((double.Parse(textBox12.Text) * 100) / double.Parse(tactivos2.Text), 2) + "%").ToString();
-            label50.Text = (Math.Round((double.Parse(textBox14.Text) * 100) / double.Parse(tactivos2.Text), 2) + "%").ToString();
+            a1 = Math.Round((double.Parse(textBox1.Text) * 100) / double.Parse(tactivos1.Text), 2);
+            label37.Text =(a1 + "%").ToString();
+            a3 = Math.Round((double.Parse(textBox3.Text) * 100) / double.Parse(tactivos1.Text), 2);
+            label39.Text = (a3 + "%").ToString();
+            a5 = Math.Round((double.Parse(textBox5.Text) * 100) / double.Parse(tactivos1.Text), 2);
+            label41.Text = (a5 + "%").ToString();
+            a7 = Math.Round((double.Parse(textBox7.Text) * 100) / double.Parse(tactivos1.Text), 2);
+            label43.Text = (a7 + "%").ToString();
+            a9 = Math.Round((double.Parse(textBox9.Text) * 100) / double.Parse(tactivos1.Text), 2);
+            label45.Text = (a9 + "%").ToString();
+            a11 = Math.Round((double.Parse(textBox11.Text) * 100) / double.Parse(tactivos1.Text), 2);
+            label47.Text = (a11 + "%").ToString();
+            a13 = Math.Round((double.Parse(textBox13.Text) * 100) / double.Parse(tactivos1.Text), 2);
+            label49.Text = (a13 + "%").ToString();
 
-            label51.Text = (Math.Round((double.Parse(textBox15.Text) * 100) / double.Parse(tpasivo1.Text), 2) + "%").ToString();
-            label53.Text = (Math.Round((double.Parse(textBox17.Text) * 100) / double.Parse(tpasivo1.Text), 2) + "%").ToString();
-            label55.Text = (Math.Round((double.Parse(textBox19.Text) * 100) / double.Parse(tpasivo1.Text), 2) + "%").ToString();
-            label57.Text = (Math.Round((double.Parse(textBox21.Text) * 100) / double.Parse(tpasivo1.Text), 2) + "%").ToString();
-            label59.Text = (Math.Round((double.Parse(textBox23.Text) * 100) / double.Parse(tpasivo1.Text), 2) + "%").ToString();
-            label61.Text = (Math.Round((double.Parse(textBox25.Text) * 100) / double.Parse(tpasivo1.Text), 2) + "%").ToString();
-            label63.Text = (Math.Round((double.Parse(textBox27.Text) * 100) / double.Parse(tpasivo1.Text), 2) + "%").ToString();
-            label52.Text = (Math.Round((double.Parse(textBox16.Text) * 100) / double.Parse(tpasivo2.Text), 2) + "%").ToString();
-            label54.Text = (Math.Round((double.Parse(textBox18.Text) * 100) / double.Parse(tpasivo2.Text), 2) + "%").ToString();
-            label56.Text = (Math.Round((double.Parse(textBox20.Text) * 100) / double.Parse(tpasivo2.Text), 2) + "%").ToString();
-            label58.Text = (Math.Round((double.Parse(textBox22.Text) * 100) / double.Parse(tpasivo2.Text), 2) + "%").ToString();
-            label60.Text = (Math.Round((double.Parse(textBox24.Text) * 100) / double.Parse(tpasivo2.Text), 2) + "%").ToString();
-            label62.Text = (Math.Round((double.Parse(textBox26.Text) * 100) / double.Parse(tpasivo2.Text), 2) + "%").ToString();
-            label64.Text = (Math.Round((double.Parse(textBox28.Text) * 100) / double.Parse(tpasivo2.Text), 2) + "%").ToString();
+            a2 = Math.Round((double.Parse(textBox2.Text) * 100) / double.Parse(tactivos2.Text), 2);
+            label38.Text = (a2 + "%").ToString();
+            a4 = Math.Round((double.Parse(textBox4.Text) * 100) / double.Parse(tactivos2.Text), 2);
+            label40.Text = (a4+"%").ToString();
+            a6 = Math.Round((double.Parse(textBox6.Text) * 100) / double.Parse(tactivos2.Text), 2);
+            label42.Text = (a6 + "%").ToString();
+            a8 = Math.Round((double.Parse(textBox8.Text) * 100) / double.Parse(tactivos2.Text), 2);
+            label44.Text = (a8 + "%").ToString();
+            a10 = Math.Round((double.Parse(textBox10.Text) * 100) / double.Parse(tactivos2.Text), 2);
+            label46.Text = (a10 + "%").ToString();
+            a12 = Math.Round((double.Parse(textBox12.Text) * 100) / double.Parse(tactivos2.Text), 2);
+            label48.Text = (a12 + "%").ToString();
+            a14 = Math.Round((double.Parse(textBox14.Text) * 100) / double.Parse(tactivos2.Text), 2);
+            label50.Text = (a14 + "%").ToString();
 
-            label65.Text = (Math.Round((double.Parse(textBox29.Text) * 100) / double.Parse(tcapital1.Text), 2) + "%").ToString();
-            label67.Text = (Math.Round((double.Parse(textBox31.Text) * 100) / double.Parse(tcapital1.Text), 2) + "%").ToString();
-            label69.Text = (Math.Round((double.Parse(textBox33.Text) * 100) / double.Parse(tcapital1.Text), 2) + "%").ToString();
-            label71.Text = (Math.Round((double.Parse(textBox35.Text) * 100) / double.Parse(tcapital1.Text), 2) + "%").ToString();
-            label66.Text = (Math.Round((double.Parse(textBox30.Text) * 100) / double.Parse(tcapital2.Text), 2) + "%").ToString();
-            label68.Text = (Math.Round((double.Parse(textBox32.Text) * 100) / double.Parse(tcapital2.Text), 2) + "%").ToString();
-            label70.Text = (Math.Round((double.Parse(textBox34.Text) * 100) / double.Parse(tcapital2.Text), 2) + "%").ToString();
-            label72.Text = (Math.Round((double.Parse(textBox36.Text) * 100) / double.Parse(tcapital2.Text), 2) + "%").ToString();
+            a15 = Math.Round((double.Parse(textBox15.Text) * 100) / double.Parse(tpasivo1.Text), 2);
+            label51.Text = (a15 + "%").ToString();
+            a17 = Math.Round((double.Parse(textBox17.Text) * 100) / double.Parse(tpasivo1.Text), 2);
+            label53.Text = (a17 + "%").ToString();
+            a19 = Math.Round((double.Parse(textBox19.Text) * 100) / double.Parse(tpasivo1.Text), 2);
+            label55.Text = (a19 + "%").ToString();
+            a21 = Math.Round((double.Parse(textBox21.Text) * 100) / double.Parse(tpasivo1.Text), 2);
+            label57.Text = (a21 + "%").ToString();
+            a23= Math.Round((double.Parse(textBox23.Text) * 100) / double.Parse(tpasivo1.Text), 2);
+            label59.Text = (a23 + "%").ToString();
+            a25 = Math.Round((double.Parse(textBox25.Text) * 100) / double.Parse(tpasivo1.Text), 2);
+            label61.Text = (a25 + "%").ToString();
+            a27 = Math.Round((double.Parse(textBox27.Text) * 100) / double.Parse(tpasivo1.Text), 2);
+            label63.Text = (a27 + "%").ToString();
+
+            a16 = Math.Round((double.Parse(textBox16.Text) * 100) / double.Parse(tpasivo2.Text), 2);
+            label52.Text = (a16 + "%").ToString();
+            a18 = Math.Round((double.Parse(textBox18.Text) * 100) / double.Parse(tpasivo2.Text), 2);
+            label54.Text = (a18 + "%").ToString();
+            a20 = Math.Round((double.Parse(textBox20.Text) * 100) / double.Parse(tpasivo2.Text), 2);
+            label56.Text = (a20 + "%").ToString();
+            a22 = Math.Round((double.Parse(textBox22.Text) * 100) / double.Parse(tpasivo2.Text), 2);
+            label58.Text = (a22 + "%").ToString();
+            a24 = Math.Round((double.Parse(textBox24.Text) * 100) / double.Parse(tpasivo2.Text), 2);
+            label60.Text = (a24 + "%").ToString();
+            a26 = Math.Round((double.Parse(textBox26.Text) * 100) / double.Parse(tpasivo2.Text), 2);
+            label62.Text = (a26 + "%").ToString();
+            a28 = Math.Round((double.Parse(textBox28.Text) * 100) / double.Parse(tpasivo2.Text), 2);
+            label64.Text = (a28 + "%").ToString();
+
+            a29 = Math.Round((double.Parse(textBox29.Text) * 100) / double.Parse(tcapital1.Text), 2);
+            label65.Text = (a29 + "%").ToString();
+            a31 = Math.Round((double.Parse(textBox31.Text) * 100) / double.Parse(tcapital1.Text), 2);
+            label67.Text = (a31 + "%").ToString();
+            a33 = Math.Round((double.Parse(textBox33.Text) * 100) / double.Parse(tcapital1.Text), 2);
+            label69.Text = (a33 + "%").ToString();
+            a35 = Math.Round((double.Parse(textBox35.Text) * 100) / double.Parse(tcapital1.Text), 2);
+            label71.Text = (a35 + "%").ToString();
+
+            a30 = Math.Round((double.Parse(textBox30.Text) * 100) / double.Parse(tcapital2.Text), 2);
+            label66.Text = (a30 + "%").ToString();
+            a32 = Math.Round((double.Parse(textBox32.Text) * 100) / double.Parse(tcapital2.Text), 2);
+            label68.Text = (a32 + "%").ToString();
+            a34 = Math.Round((double.Parse(textBox34.Text) * 100) / double.Parse(tcapital2.Text), 2);
+            label70.Text = (a34 + "%").ToString();
+            a36 = Math.Round((double.Parse(textBox36.Text) * 100) / double.Parse(tcapital2.Text), 2);
+            label72.Text = (a36 + "%").ToString();
 
             desbloquear();
             button4.Enabled = true;
@@ -204,26 +252,46 @@ namespace ModernGUI_V3
 
         private void button4_Click(object sender, EventArgs e)
         {
-            label73.Text = (Math.Round(double.Parse(label38.Text) - double.Parse(label37.Text), 2)).ToString();
-            label75.Text = (Math.Round(double.Parse(label40.Text) - double.Parse(label39.Text), 2)).ToString();
-            label77.Text = (Math.Round(double.Parse(label42.Text) - double.Parse(label41.Text), 2)).ToString();
-            label79.Text = (Math.Round(double.Parse(label44.Text) - double.Parse(label43.Text), 2)).ToString();
-            label81.Text = (Math.Round(double.Parse(label46.Text) - double.Parse(label45.Text), 2)).ToString();
-            label83.Text = (Math.Round(double.Parse(label48.Text) - double.Parse(label47.Text), 2)).ToString();
-            label85.Text = (Math.Round(double.Parse(label50.Text) - double.Parse(label49.Text), 2)).ToString();
+            label73.Text = (Math.Round(double.Parse(textBox1.Text)-double.Parse(textBox2.Text),2)).ToString();
+            label75.Text = (Math.Round(double.Parse(textBox3.Text) - double.Parse(textBox4.Text), 2)).ToString();
+            label77.Text = (Math.Round(double.Parse(textBox5.Text) - double.Parse(textBox6.Text), 2)).ToString();
+            label79.Text = (Math.Round(double.Parse(textBox7.Text) - double.Parse(textBox8.Text), 2)).ToString();
+            label81.Text = (Math.Round(double.Parse(textBox9.Text) - double.Parse(textBox10.Text), 2)).ToString();
+            label83.Text = (Math.Round(double.Parse(textBox11.Text) - double.Parse(textBox12.Text), 2)).ToString();
+            label85.Text = (Math.Round(double.Parse(textBox13.Text) - double.Parse(textBox14.Text), 2)).ToString();
+            label87.Text = (Math.Round(double.Parse(textBox15.Text) - double.Parse(textBox16.Text), 2)).ToString();
+            label89.Text = (Math.Round(double.Parse(textBox17.Text) - double.Parse(textBox18.Text), 2)).ToString();
+            label91.Text = (Math.Round(double.Parse(textBox19.Text) - double.Parse(textBox20.Text), 2)).ToString();
+            label93.Text = (Math.Round(double.Parse(textBox21.Text) - double.Parse(textBox22.Text), 2)).ToString();
+            label95.Text = (Math.Round(double.Parse(textBox23.Text) - double.Parse(textBox24.Text), 2)).ToString();
+            label97.Text = (Math.Round(double.Parse(textBox25.Text) - double.Parse(textBox26.Text), 2)).ToString();
+            label99.Text = (Math.Round(double.Parse(textBox27.Text) - double.Parse(textBox26.Text), 2)).ToString();
+            label101.Text = (Math.Round(double.Parse(textBox29.Text) - double.Parse(textBox30.Text), 2)).ToString();
+            label103.Text = (Math.Round(double.Parse(textBox31.Text) - double.Parse(textBox32.Text), 2)).ToString();
+            label105.Text = (Math.Round(double.Parse(textBox33.Text) - double.Parse(textBox34.Text), 2)).ToString();
+            label107.Text = (Math.Round(double.Parse(textBox35.Text) - double.Parse(textBox36.Text), 2)).ToString();
 
-            label87.Text = (Math.Round(double.Parse(label52.Text) - double.Parse(label51.Text), 2)).ToString();
-            label89.Text = (Math.Round(double.Parse(label54.Text) - double.Parse(label53.Text), 2)).ToString();
-            label91.Text = (Math.Round(double.Parse(label56.Text) - double.Parse(label55.Text), 2)).ToString();
-            label93.Text = (Math.Round(double.Parse(label58.Text) - double.Parse(label57.Text), 2)).ToString();
-            label95.Text = (Math.Round(double.Parse(label60.Text) - double.Parse(label59.Text), 2)).ToString();
-            label97.Text = (Math.Round(double.Parse(label62.Text) - double.Parse(label61.Text), 2)).ToString();
-            label99.Text = (Math.Round(double.Parse(label64.Text) - double.Parse(label63.Text), 2)).ToString();
+            label74.Text = ((Math.Round((double.Parse(label73.Text)/double.Parse(textBox2.Text))*100,2))+"%").ToString();
+            label76.Text = ((Math.Round((double.Parse(label75.Text) / double.Parse(textBox4.Text)) * 100, 2))+ "%").ToString();
+            label78.Text = ((Math.Round((double.Parse(label77.Text) / double.Parse(textBox6.Text)) * 100, 2)) + "%").ToString();
+            label80.Text = ((Math.Round((double.Parse(label79.Text) / double.Parse(textBox8.Text)) * 100, 2)) + "%").ToString();
+            label82.Text = ((Math.Round((double.Parse(label81.Text) / double.Parse(textBox10.Text)) * 100, 2)) + "%").ToString();
+            label84.Text = ((Math.Round((double.Parse(label83.Text) / double.Parse(textBox12.Text)) * 100, 2)) + "%").ToString();
+            label86.Text = ((Math.Round((double.Parse(label85.Text) / double.Parse(textBox14.Text)) * 100, 2)) + "%").ToString();
+            label88.Text = ((Math.Round((double.Parse(label87.Text) / double.Parse(textBox16.Text)) * 100, 2)) + "%").ToString();
+            label90.Text = ((Math.Round((double.Parse(label89.Text) / double.Parse(textBox18.Text)) * 100, 2)) + "%").ToString();
+            label92.Text = ((Math.Round((double.Parse(label91.Text) / double.Parse(textBox20.Text)) * 100, 2)) + "%").ToString();
+            label94.Text = ((Math.Round((double.Parse(label93.Text) / double.Parse(textBox22.Text)) * 100, 2)) + "%").ToString();
+            label96.Text = ((Math.Round((double.Parse(label95.Text) / double.Parse(textBox24.Text)) * 100, 2)) + "%").ToString();
+            label98.Text = ((Math.Round((double.Parse(label97.Text) / double.Parse(textBox26.Text)) * 100, 2)) + "%").ToString();
+            label100.Text = ((Math.Round((double.Parse(label99.Text) / double.Parse(textBox28.Text)) * 100, 2)) + "%").ToString();
+            label102.Text = ((Math.Round((double.Parse(label101.Text) / double.Parse(textBox30.Text)) * 100, 2)) + "%").ToString();
+            label104.Text = ((Math.Round((double.Parse(label103.Text) / double.Parse(textBox32.Text)) * 100, 2)) + "%").ToString();
+            label106.Text = ((Math.Round((double.Parse(label105.Text) / double.Parse(textBox34.Text)) * 100, 2)) + "%").ToString();
+            label108.Text = ((Math.Round((double.Parse(label107.Text) / double.Parse(textBox36.Text)) * 100, 2)) + "%").ToString();
 
-            label101.Text = (Math.Round(double.Parse(label66.Text) - double.Parse(label65.Text), 2)).ToString();
-            label103.Text = (Math.Round(double.Parse(label68.Text) - double.Parse(label67.Text), 2)).ToString();
-            label105.Text = (Math.Round(double.Parse(label70.Text) - double.Parse(label69.Text), 2)).ToString();
-            label107.Text = (Math.Round(double.Parse(label72.Text) - double.Parse(label71.Text), 2)).ToString();
+
+
 
             desbloquear1();
         }

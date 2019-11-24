@@ -1393,6 +1393,7 @@
             this.label75.TabIndex = 473;
             this.label75.Text = "000000";
             this.label75.Visible = false;
+            this.label75.Click += new System.EventHandler(this.label75_Click);
             // 
             // label76
             // 
