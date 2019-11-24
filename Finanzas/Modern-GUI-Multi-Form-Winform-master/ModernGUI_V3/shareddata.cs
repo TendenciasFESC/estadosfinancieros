@@ -26,17 +26,16 @@ namespace ModernGUI_V3
         public double edificios;
         public double softysis;
 
-        public double banco2;
-        public double instrumentos_financiero2;
-        public double cyddiverso2;
-        public double almace2;
+        public double bancos2;
+        public double instrumentos_financieros2;
+        public double cyddiversos2;
+        public double almacen2;
         public double pagos_anticipados2;
         public double edificios2;
         public double softysis2;
 
         public double proovedores;
         public double acreedores;
-        public double pas_ret_ef;
         public double impuestos;
         public double provisiones;
         public double otros;
@@ -44,7 +43,6 @@ namespace ModernGUI_V3
 
         public double proovedores2;
         public double acreedores2;
-        public double pas_ret_ef2;
         public double impuestos2;
         public double provisiones2;
         public double otros2;

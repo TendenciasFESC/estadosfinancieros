@@ -86,6 +86,12 @@
     <Compile Include="BalanceGral.Designer.cs">
       <DependentUpon>BalanceGral.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
     <Compile Include="graficas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +137,9 @@
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +184,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\2f0.png" />
+    <None Include="Resources\remove.png" />
+    <None Include="Resources\plus.png" />
     <None Include="bin\Debug\src\catalogo_de_cuentas.txt" />
     <Content Include="finanzas.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

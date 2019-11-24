@@ -466,6 +466,46 @@ namespace ModernGUI_V3
                 shareddata.Instance.capital2 = double.Parse(tcapital2.Text);
                 shareddata.Instance.pascap2 = double.Parse(tpc2.Text);
 
+                shareddata.Instance.bancos = double.Parse(textBox1.Text);
+                shareddata.Instance.instrumentos_financieros = double.Parse(textBox3.Text);
+                shareddata.Instance.cyddiversos = double.Parse(textBox5.Text);
+                shareddata.Instance.almacen = double.Parse(textBox7.Text);
+                shareddata.Instance.pagos_anticipados = double.Parse(textBox9.Text);
+                shareddata.Instance.edificios = double.Parse(textBox11.Text);
+                shareddata.Instance.softysis = double.Parse(textBox13.Text);
+
+                shareddata.Instance.bancos2 = double.Parse(textBox2.Text);
+                shareddata.Instance.instrumentos_financieros2 = double.Parse(textBox4.Text);
+                shareddata.Instance.cyddiversos2 = double.Parse(textBox6.Text);
+                shareddata.Instance.almacen2 = double.Parse(textBox8.Text);
+                shareddata.Instance.pagos_anticipados2 = double.Parse(textBox10.Text);
+                shareddata.Instance.edificios2 = double.Parse(textBox12.Text);
+                shareddata.Instance.softysis2 = double.Parse(textBox14.Text);
+
+                shareddata.Instance.proovedores = double.Parse(textBox17.Text);
+                shareddata.Instance.acreedores = double.Parse(textBox19.Text);
+                shareddata.Instance.impuestos = double.Parse(textBox21.Text);
+                shareddata.Instance.provisiones = double.Parse(textBox23.Text);
+                shareddata.Instance.otros = double.Parse(textBox25.Text);
+                shareddata.Instance.credito = double.Parse(textBox27.Text);
+
+                shareddata.Instance.proovedores2 = double.Parse(textBox18.Text);
+                shareddata.Instance.acreedores2 = double.Parse(textBox20.Text);
+                shareddata.Instance.impuestos2 = double.Parse(textBox22.Text);
+                shareddata.Instance.provisiones2 = double.Parse(textBox24.Text);
+                shareddata.Instance.otros2 = double.Parse(textBox26.Text);
+                shareddata.Instance.credito2 = double.Parse(textBox28.Text);
+
+                shareddata.Instance.capital_social = double.Parse(textBox29.Text);
+                shareddata.Instance.aportacion = double.Parse(textBox31.Text);
+                shareddata.Instance.reservas = double.Parse(textBox33.Text);
+                shareddata.Instance.utilidads = double.Parse(textBox35.Text);
+
+                shareddata.Instance.capital_social2 = double.Parse(textBox30.Text);
+                shareddata.Instance.aportacion2 = double.Parse(textBox32.Text);
+                shareddata.Instance.reservas2 = double.Parse(textBox34.Text);
+                shareddata.Instance.utilidads2 = double.Parse(textBox36.Text);
+
                 graficas graf = new graficas();
                 graf.Show();
             }
