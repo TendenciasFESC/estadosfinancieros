@@ -18,6 +18,47 @@ namespace ModernGUI_V3
         public double pascap1;
         public double pascap2;
 
+        public double bancos;
+        public double instrumentos_financieros;
+        public double cyddiversos;
+        public double almacen;
+        public double pagos_anticipados;
+        public double edificios;
+        public double softysis;
+
+        public double banco2;
+        public double instrumentos_financiero2;
+        public double cyddiverso2;
+        public double almace2;
+        public double pagos_anticipados2;
+        public double edificios2;
+        public double softysis2;
+
+        public double proovedores;
+        public double acreedores;
+        public double pas_ret_ef;
+        public double impuestos;
+        public double provisiones;
+        public double otros;
+        public double credito;
+
+        public double proovedores2;
+        public double acreedores2;
+        public double pas_ret_ef2;
+        public double impuestos2;
+        public double provisiones2;
+        public double otros2;
+        public double credito2;
+
+        public double capital_social;
+        public double aportacion;
+        public double reservas;
+        public double utilidads;
+
+        public double capital_social2;
+        public double aportacion2;
+        public double reservas2;
+        public double utilidads2;
         protected shareddata() { }
 
         public static shareddata Instance

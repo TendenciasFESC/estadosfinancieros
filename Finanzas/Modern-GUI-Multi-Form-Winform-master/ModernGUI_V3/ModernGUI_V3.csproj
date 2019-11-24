@@ -62,6 +62,7 @@
       <DependentUpon>Catalogo.cs</DependentUpon>
     </Compile>
     <Compile Include="Dim.cs" />
+    <Compile Include="estado_resultados.cs" />
     <Compile Include="finanzasDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

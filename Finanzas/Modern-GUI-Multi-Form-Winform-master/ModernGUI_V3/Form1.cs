@@ -268,7 +268,34 @@ namespace ModernGUI_V3
 
         private void button9_Click(object sender, EventArgs e)
         {
-            ExportarDataGridViewExcel(dataGridView1);
+            if (comboBox1.Text == "2017")
+            {
+                estado_resultados.Instance.ventas = double.Parse(textBox1.Text);
+                estado_resultados.Instance.costos_ventas = double.Parse(textBox2.Text);
+                estado_resultados.Instance.utilidad_bruta = double.Parse(textBox3.Text);
+                estado_resultados.Instance.gastos_operacion = double.Parse(textBox4.Text);
+                estado_resultados.Instance.utilidad_de_operacion = double.Parse(textBox5.Text);
+                estado_resultados.Instance.otros_productos = double.Parse(textBox6.Text);
+                estado_resultados.Instance.otros_gastos = double.Parse(textBox7.Text);
+                estado_resultados.Instance.utilidad_antes = double.Parse(textBox8.Text);
+                estado_resultados.Instance.ISR = double.Parse(textBox9.Text);
+                estado_resultados.Instance.PTU = double.Parse(textBox10.Text);
+                ExportarDataGridViewExcel(dataGridView1);
+            }
+            else
+            {
+                estado_resultados.Instance.ventas2 = double.Parse(textBox1.Text);
+                estado_resultados.Instance.costos_ventas2 = double.Parse(textBox2.Text);
+                estado_resultados.Instance.utilidad_bruta2 = double.Parse(textBox3.Text);
+                estado_resultados.Instance.gastos_operacion2 = double.Parse(textBox4.Text);
+                estado_resultados.Instance.utilidad_de_operacion2 = double.Parse(textBox5.Text);
+                estado_resultados.Instance.otros_productos2 = double.Parse(textBox6.Text);
+                estado_resultados.Instance.otros_gastos2 = double.Parse(textBox7.Text);
+                estado_resultados.Instance.utilidad_antes2 = double.Parse(textBox8.Text);
+                estado_resultados.Instance.ISR2 = double.Parse(textBox9.Text);
+                estado_resultados.Instance.PTU2 = double.Parse(textBox10.Text);
+                ExportarDataGridViewExcel(dataGridView1);
+            }
         }
 
         private void print_Click(object sender, EventArgs e)
@@ -316,6 +343,11 @@ namespace ModernGUI_V3
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

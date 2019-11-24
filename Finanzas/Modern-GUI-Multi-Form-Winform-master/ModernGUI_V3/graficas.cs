@@ -31,12 +31,12 @@ namespace ModernGUI_V3
             puntos[2] = shareddata.Instance.capital1;
             puntos[3] = shareddata.Instance.pascap1;
 
-            chart2017.Palette = ChartColorPalette.Pastel;
-            chart2017.Titles.Add("2017");
+            chart2018.Palette = ChartColorPalette.Pastel;
+            chart2018.Titles.Add("2018");
 
             for (int i = 0; i < series.Length; i++)
             {
-                Series serie = chart2017.Series.Add(series[i]);
+                Series serie = chart2018.Series.Add(series[i]);
 
                 serie.Label = puntos[i].ToString();
 
@@ -48,11 +48,11 @@ namespace ModernGUI_V3
             puntos[2] = shareddata.Instance.capital2;
             puntos[3] = shareddata.Instance.pascap2;
 
-            chart2018.Titles.Add("2018");
+            chart2017.Titles.Add("2017");
 
             for (int i = 0; i < series.Length; i++)
             {
-                Series serie = chart2018.Series.Add(series[i]);
+                Series serie = chart2017.Series.Add(series[i]);
 
                 serie.Label = puntos[i].ToString();
 
