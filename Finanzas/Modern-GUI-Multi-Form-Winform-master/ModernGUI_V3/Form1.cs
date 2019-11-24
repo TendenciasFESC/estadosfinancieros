@@ -21,17 +21,43 @@ namespace ModernGUI_V3
 
         private void utilidadbruta()
         {
-            textBox3.Text = Convert.ToString(double.Parse(textBox1.Text) - double.Parse(textBox2.Text));
+            try
+            {
+                textBox3.Text = Convert.ToString(double.Parse(textBox1.Text) - double.Parse(textBox2.Text));
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Faltan datos o formato incorrecto!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
         }
 
         private void utilidadantesISR()
         {
-            textBox8.Text = Convert.ToString(double.Parse(textBox5.Text) + double.Parse(textBox6.Text) - double.Parse(textBox7.Text));
+            try
+            {
+                textBox8.Text = Convert.ToString(double.Parse(textBox5.Text) + double.Parse(textBox6.Text) - double.Parse(textBox7.Text));
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Faltan datos o formato incorrecto!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
+            
         }
 
         private void utilidadNeta()
         {
-            textBox11.Text = Convert.ToString(double.Parse(textBox8.Text) - double.Parse(textBox9.Text) - double.Parse(textBox10.Text));
+            try
+            {
+                textBox11.Text = Convert.ToString(double.Parse(textBox8.Text) - double.Parse(textBox9.Text) - double.Parse(textBox10.Text));
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Faltan datos o formato incorrecto!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
         }
 
         private void limpiar()
@@ -137,7 +163,16 @@ namespace ModernGUI_V3
 
         private void textBox4_Leave(object sender, EventArgs e)
         {
-            textBox5.Text = Convert.ToString(double.Parse(textBox3.Text) - double.Parse(textBox4.Text));
+            try
+            {
+                textBox5.Text = Convert.ToString(double.Parse(textBox3.Text) - double.Parse(textBox4.Text));
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Faltan datos o formato incorrecto!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+            
 
         }
 
@@ -178,47 +213,57 @@ namespace ModernGUI_V3
         {
             string[,] estado = new string[2, 11];
 
-            estado[0, 0] = label1.Text;
-            estado[0, 1] = label2.Text;
-            estado[0, 2] = label3.Text;
-            estado[0, 3] = label4.Text;
-            estado[0, 4] = label5.Text;
-            estado[0, 5] = label6.Text;
-            estado[0, 6] = label7.Text;
-            estado[0, 7] = label8.Text;
-            estado[0, 8] = label9.Text;
-            estado[0, 9] = label10.Text;
-            estado[0, 10] = label11.Text;
-
-            estado[1, 0] = textBox1.Text;
-            estado[1, 1] = textBox2.Text;
-            estado[1, 2] = textBox3.Text;
-            estado[1, 3] = textBox4.Text;
-            estado[1, 4] = textBox5.Text;
-            estado[1, 5] = textBox6.Text;
-            estado[1, 6] = textBox7.Text;
-            estado[1, 7] = textBox8.Text;
-            estado[1, 8] = textBox9.Text;
-            estado[1, 9] = textBox10.Text;
-            estado[1, 10] = textBox11.Text;
-
-            DataTable tabla = new DataTable();
-            DataRow renglon;
-            tabla.Columns.Add(new DataColumn("Estado de resultados"));
-            tabla.Columns.Add(new DataColumn("Cantidad"));
-            for(int i = 0; i < 11; i++)
+            try
             {
-                renglon = tabla.NewRow();
-                renglon[0] = estado[0, i];
-                renglon[1] = estado[1, i];
-                tabla.Rows.Add(renglon);
+                estado[0, 0] = label1.Text;
+                estado[0, 1] = label2.Text;
+                estado[0, 2] = label3.Text;
+                estado[0, 3] = label4.Text;
+                estado[0, 4] = label5.Text;
+                estado[0, 5] = label6.Text;
+                estado[0, 6] = label7.Text;
+                estado[0, 7] = label8.Text;
+                estado[0, 8] = label9.Text;
+                estado[0, 9] = label10.Text;
+                estado[0, 10] = label11.Text;
+
+                estado[1, 0] = textBox1.Text;
+                estado[1, 1] = textBox2.Text;
+                estado[1, 2] = textBox3.Text;
+                estado[1, 3] = textBox4.Text;
+                estado[1, 4] = textBox5.Text;
+                estado[1, 5] = textBox6.Text;
+                estado[1, 6] = textBox7.Text;
+                estado[1, 7] = textBox8.Text;
+                estado[1, 8] = textBox9.Text;
+                estado[1, 9] = textBox10.Text;
+                estado[1, 10] = textBox11.Text;
+
+                DataTable tabla = new DataTable();
+                DataRow renglon;
+                tabla.Columns.Add(new DataColumn("Estado de resultados"));
+                tabla.Columns.Add(new DataColumn("Cantidad"));
+                for (int i = 0; i < 11; i++)
+                {
+                    renglon = tabla.NewRow();
+                    renglon[0] = estado[0, i];
+                    renglon[1] = estado[1, i];
+                    tabla.Rows.Add(renglon);
+                }
+                dataGridView1.DataSource = tabla;
+                dataGridView1.Columns[0].Width = 350;
+                dataGridView1.Columns[1].Width = 100;
+                dataGridView1.Visible = true;
+                print.Visible = true;
+                button9.Visible = true;
             }
-            dataGridView1.DataSource = tabla;
-            dataGridView1.Columns[0].Width = 350;
-            dataGridView1.Columns[1].Width = 100;
-            dataGridView1.Visible = true;
-            print.Visible = true;
-            button9.Visible = true;
+            catch (Exception)
+            {
+                MessageBox.Show("Faltan datos o formato incorrecto!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
+
+            
         }
 
         private void button9_Click(object sender, EventArgs e)

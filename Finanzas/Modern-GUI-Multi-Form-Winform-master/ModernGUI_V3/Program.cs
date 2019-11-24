@@ -16,7 +16,12 @@ namespace ModernGUI_V3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormPrincipal());
+            Form3 sp = new Form3();
+            if (sp.ShowDialog()==DialogResult.OK)
+            {
+                Application.Run(new FormPrincipal());
+
+            }
         }
     }
 }
