@@ -23,6 +23,7 @@ namespace ModernGUI_V3
             {
                 tactivos1.Text = (double.Parse(textBox1.Text) + double.Parse(textBox3.Text) + double.Parse(textBox5.Text) + double.Parse(textBox7.Text) + double.Parse(textBox9.Text) + double.Parse(textBox11.Text) + double.Parse(textBox13.Text)).ToString();
                 tactivos2.Text = (double.Parse(textBox2.Text) + double.Parse(textBox4.Text) + double.Parse(textBox6.Text) + double.Parse(textBox8.Text) + double.Parse(textBox10.Text) + double.Parse(textBox12.Text) + double.Parse(textBox14.Text)).ToString();
+                button2.Enabled = true;
             }
             catch (Exception)
             {
@@ -38,6 +39,7 @@ namespace ModernGUI_V3
             {
                 tpasivo1.Text = (double.Parse(textBox15.Text)+double.Parse(textBox17.Text) + double.Parse(textBox19.Text) + double.Parse(textBox21.Text) + double.Parse(textBox23.Text) + double.Parse(textBox25.Text) + double.Parse(textBox27.Text)).ToString();
                 tpasivo2.Text = (double.Parse(textBox16.Text)+double.Parse(textBox18.Text) + double.Parse(textBox20.Text) + double.Parse(textBox22.Text) + double.Parse(textBox24.Text) + double.Parse(textBox26.Text) + double.Parse(textBox28.Text)).ToString();
+                button3.Enabled = true;
             }
             catch (Exception)
             {
@@ -55,6 +57,8 @@ namespace ModernGUI_V3
                 tcapital2.Text = (double.Parse(textBox30.Text) + double.Parse(textBox32.Text) + double.Parse(textBox34.Text) + double.Parse(textBox36.Text)).ToString();
                 tpc1.Text = (double.Parse(tpasivo1.Text) + double.Parse(tcapital1.Text)).ToString();
                 tpc2.Text = (double.Parse(tcapital2.Text) + double.Parse(tpasivo2.Text)).ToString();
+
+                button4.Enabled = true;
             }
             catch (Exception)
             {
@@ -138,6 +142,18 @@ namespace ModernGUI_V3
                     label50.Text = ((double.Parse(textBox14.Text) - double.Parse(textBox13.Text)).ToString());
                     label49.Text = Convert.ToString(0); ;
                 }
+
+                if (double.Parse(textBox15.Text) > double.Parse(textBox16.Text))
+                {
+                    label17.Text = ((double.Parse(textBox15.Text) - double.Parse(textBox16.Text)).ToString());
+                    label109.Text = Convert.ToString(0); ;
+                }
+                else
+                {
+                    label109.Text = ((double.Parse(textBox16.Text) - double.Parse(textBox15.Text)).ToString());
+                    label17.Text = Convert.ToString(0); ;
+                }
+
                 if (double.Parse(textBox17.Text) > double.Parse(textBox18.Text))
                 {
                     label51.Text = ((double.Parse(textBox17.Text) - double.Parse(textBox18.Text)).ToString());
@@ -240,9 +256,10 @@ namespace ModernGUI_V3
                 }
 
                 double taumento;
-                taumento = (double.Parse(label37.Text) + double.Parse(label39.Text) + double.Parse(label41.Text) + double.Parse(label43.Text) + double.Parse(label45.Text) + double.Parse(label47.Text) + double.Parse(label49.Text) + double.Parse(label51.Text) + double.Parse(label53.Text) + double.Parse(label55.Text) + double.Parse(label57.Text) + double.Parse(label59.Text) + double.Parse(label61.Text) + double.Parse(label63.Text) + double.Parse(label65.Text) + double.Parse(label67.Text) + double.Parse(label105.Text));
+                taumento = (double.Parse(label17.Text)+double.Parse(label37.Text) + double.Parse(label39.Text) + double.Parse(label41.Text) + double.Parse(label43.Text) + double.Parse(label45.Text) + double.Parse(label47.Text) + double.Parse(label49.Text) + double.Parse(label51.Text) + double.Parse(label53.Text) + double.Parse(label55.Text) + double.Parse(label57.Text) + double.Parse(label59.Text) + double.Parse(label61.Text) + double.Parse(label63.Text) + double.Parse(label65.Text) + double.Parse(label67.Text) + double.Parse(label105.Text));
                 label101.Text = Convert.ToString(taumento);
-                label102.Text = Convert.ToString(double.Parse(label38.Text) + double.Parse(label40.Text) + double.Parse(label42.Text) + double.Parse(label44.Text) + double.Parse(label46.Text) + double.Parse(label48.Text) + double.Parse(label50.Text) + double.Parse(label52.Text) + double.Parse(label54.Text) + double.Parse(label56.Text) + double.Parse(label58.Text) + double.Parse(label60.Text) + double.Parse(label62.Text) + double.Parse(label64.Text) + double.Parse(label66.Text) + double.Parse(label68.Text) + double.Parse(label106.Text)).ToString();
+                label102.Text = Convert.ToString(double.Parse(label109.Text) + double.Parse(label38.Text) + double.Parse(label40.Text) + double.Parse(label42.Text) + double.Parse(label44.Text) + double.Parse(label46.Text) + double.Parse(label48.Text) + double.Parse(label50.Text) + double.Parse(label52.Text) + double.Parse(label54.Text) + double.Parse(label56.Text) + double.Parse(label58.Text) + double.Parse(label60.Text) + double.Parse(label62.Text) + double.Parse(label64.Text) + double.Parse(label66.Text) + double.Parse(label68.Text) + double.Parse(label106.Text)).ToString();
+                button5.Enabled = true;
             }
             catch (Exception)
             {
@@ -326,6 +343,20 @@ namespace ModernGUI_V3
                     label82.Text = ((double.Parse(textBox13.Text) - double.Parse(textBox14.Text)).ToString());
                     label81.Text = Convert.ToString(0);
                 }
+
+                if (double.Parse(textBox15.Text) > double.Parse(textBox16.Text))
+                {
+                    label110.Text = ((double.Parse(textBox15.Text) - double.Parse(textBox16.Text)).ToString());
+                    label111.Text = Convert.ToString(0);
+                }
+                else
+                {
+                    label111.Text = ((double.Parse(textBox16.Text) - double.Parse(textBox15.Text)).ToString());
+                    label110.Text = Convert.ToString(0);
+                }
+
+
+
                 if (double.Parse(textBox17.Text) > double.Parse(textBox18.Text))
                 {
                     label83.Text = ((double.Parse(textBox17.Text) - double.Parse(textBox18.Text)).ToString());
@@ -426,15 +457,15 @@ namespace ModernGUI_V3
                     label108.Text = ((double.Parse(textBox36.Text) - double.Parse(textBox35.Text)).ToString());
                     label107.Text = Convert.ToString(0);
                 }
-                label103.Text = Convert.ToString(double.Parse(label69.Text) + double.Parse(label71.Text) + double.Parse(label73.Text) + double.Parse(label75.Text) + double.Parse(label77.Text) + double.Parse(label79.Text) + double.Parse(label81.Text) + double.Parse(label83.Text) + double.Parse(label85.Text) + double.Parse(label87.Text) + double.Parse(label89.Text) + double.Parse(label91.Text) + double.Parse(label93.Text) + double.Parse(label95.Text) + double.Parse(label97.Text) + double.Parse(label99.Text) + double.Parse(label107.Text));
-                label104.Text = Convert.ToString(double.Parse(label70.Text) + double.Parse(label72.Text) + double.Parse(label74.Text) + double.Parse(label76.Text) + double.Parse(label78.Text) + double.Parse(label80.Text) + double.Parse(label82.Text) + double.Parse(label84.Text) + double.Parse(label86.Text) + double.Parse(label88.Text) + double.Parse(label90.Text) + double.Parse(label92.Text) + double.Parse(label94.Text) + double.Parse(label96.Text) + double.Parse(label98.Text) + double.Parse(label100.Text) + double.Parse(label108.Text));
+                label103.Text = Convert.ToString(double.Parse(label110.Text) + double.Parse(label69.Text) + double.Parse(label71.Text) + double.Parse(label73.Text) + double.Parse(label75.Text) + double.Parse(label77.Text) + double.Parse(label79.Text) + double.Parse(label81.Text) + double.Parse(label83.Text) + double.Parse(label85.Text) + double.Parse(label87.Text) + double.Parse(label89.Text) + double.Parse(label91.Text) + double.Parse(label93.Text) + double.Parse(label95.Text) + double.Parse(label97.Text) + double.Parse(label99.Text) + double.Parse(label107.Text));
+                label104.Text = Convert.ToString(double.Parse(label111.Text) + double.Parse(label70.Text) + double.Parse(label72.Text) + double.Parse(label74.Text) + double.Parse(label76.Text) + double.Parse(label78.Text) + double.Parse(label80.Text) + double.Parse(label82.Text) + double.Parse(label84.Text) + double.Parse(label86.Text) + double.Parse(label88.Text) + double.Parse(label90.Text) + double.Parse(label92.Text) + double.Parse(label94.Text) + double.Parse(label96.Text) + double.Parse(label98.Text) + double.Parse(label100.Text) + double.Parse(label108.Text));
             }
             catch (Exception)
             {
                 MessageBox.Show("Faltan datos o formato incorrecto!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
             }
-            
+            button6.Enabled = true;
 
         }
 
@@ -516,6 +547,15 @@ namespace ModernGUI_V3
 
                 MessageBox.Show("Faltan datos!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+
+
+            button1.Enabled = true;
+
         }
     }
 }

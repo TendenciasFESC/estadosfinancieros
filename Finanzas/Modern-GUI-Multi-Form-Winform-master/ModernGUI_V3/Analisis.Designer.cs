@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Analisis));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
@@ -115,7 +114,6 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
@@ -187,19 +185,9 @@
             this.button5 = new System.Windows.Forms.Button();
             this.label107 = new System.Windows.Forms.Label();
             this.label108 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ModernGUI_V3.Properties.Resources.close_window;
-            this.pictureBox1.Location = new System.Drawing.Point(1191, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(62, 57);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 349;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // label1
             // 
@@ -976,17 +964,6 @@
             this.label38.Text = "00%";
             this.label38.Visible = false;
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label17.Location = new System.Drawing.Point(459, 239);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(44, 20);
-            this.label17.TabIndex = 436;
-            this.label17.Text = "00%";
-            this.label17.Visible = false;
-            // 
             // label39
             // 
             this.label39.AutoSize = true;
@@ -1740,7 +1717,7 @@
             // 
             this.button5.Enabled = false;
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(1169, 630);
+            this.button5.Location = new System.Drawing.Point(1169, 597);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(84, 78);
             this.button5.TabIndex = 505;
@@ -1771,12 +1748,23 @@
             this.label108.Text = "000000";
             this.label108.Visible = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ModernGUI_V3.Properties.Resources.Button_Close__32__1;
+            this.pictureBox2.Location = new System.Drawing.Point(1221, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.TabIndex = 508;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // Analisis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1265, 720);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label108);
             this.Controls.Add(this.label107);
             this.Controls.Add(this.button5);
@@ -1848,7 +1836,6 @@
             this.Controls.Add(this.label41);
             this.Controls.Add(this.label40);
             this.Controls.Add(this.label39);
-            this.Controls.Add(this.label17);
             this.Controls.Add(this.label38);
             this.Controls.Add(this.label37);
             this.Controls.Add(this.label16);
@@ -1934,20 +1921,17 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Analisis";
             this.Text = "Analisis";
             this.Load += new System.EventHandler(this.Analisis_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label35;
@@ -2033,7 +2017,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
@@ -2105,5 +2088,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label107;
         private System.Windows.Forms.Label label108;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
