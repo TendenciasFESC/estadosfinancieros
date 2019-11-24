@@ -931,8 +931,9 @@
             // 
             // button5
             // 
+            this.button5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.Location = new System.Drawing.Point(1161, 417);
+            this.button5.Location = new System.Drawing.Point(1165, 417);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(84, 78);
             this.button5.TabIndex = 40;
@@ -943,8 +944,9 @@
             // 
             // button4
             // 
+            this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(1161, 335);
+            this.button4.Location = new System.Drawing.Point(1165, 335);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(84, 76);
             this.button4.TabIndex = 39;
@@ -955,8 +957,9 @@
             // 
             // button3
             // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(1161, 250);
+            this.button3.Location = new System.Drawing.Point(1165, 250);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(84, 79);
             this.button3.TabIndex = 38;
@@ -967,8 +970,9 @@
             // 
             // button2
             // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(1161, 169);
+            this.button2.Location = new System.Drawing.Point(1165, 169);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(84, 75);
             this.button2.TabIndex = 37;
@@ -979,8 +983,9 @@
             // 
             // button1
             // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(1161, 85);
+            this.button1.Location = new System.Drawing.Point(1165, 85);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 78);
             this.button1.TabIndex = 36;
@@ -1625,6 +1630,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = global::ModernGUI_V3.Properties.Resources.Button_Close__32__1;
             this.pictureBox1.Location = new System.Drawing.Point(1220, 2);
             this.pictureBox1.Name = "pictureBox1";
@@ -1635,8 +1641,9 @@
             // 
             // button6
             // 
+            this.button6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.Location = new System.Drawing.Point(1161, 500);
+            this.button6.Location = new System.Drawing.Point(1165, 500);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(84, 78);
             this.button6.TabIndex = 41;
@@ -1664,7 +1671,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(1261, 749);
             this.Controls.Add(this.textBox16);
             this.Controls.Add(this.textBox15);
             this.Controls.Add(this.button6);
