@@ -1129,6 +1129,7 @@
             // 
             // button1
             // 
+            this.button1.Enabled = false;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.Location = new System.Drawing.Point(1161, 168);
             this.button1.Name = "button1";
@@ -1846,7 +1847,8 @@
             // 
             // button7
             // 
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.Image = global::ModernGUI_V3.Properties.Resources.plus;
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button7.Location = new System.Drawing.Point(1161, 84);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(84, 78);

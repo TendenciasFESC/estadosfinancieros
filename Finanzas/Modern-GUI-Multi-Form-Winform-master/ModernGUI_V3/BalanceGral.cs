@@ -187,24 +187,43 @@ namespace ModernGUI_V3
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (!textBox1.Text.Equals(""))
+            if (comboBox6.Text == "2017")
             {
-                ListViewItem uno = new ListViewItem(comboBox1.Text);
-                uno.SubItems.Add(textBox1.Text);
-                listView1.Items.Add(uno);
-                textBox1.Text = "";
-                Double suma = 0;
-                foreach(ListViewItem item in listView1.Items)
-                {
-                    suma += Convert.ToDouble(item.SubItems[1].Text);
-                }
-                foreach (ListViewItem item1 in listView2.Items)
-                {
-                    suma += Convert.ToDouble(item1.SubItems[1].Text);
-                }
-                textBox6.Text = Convert.ToString(suma);
+                shareddata.Instance.bancos = double.Parse(textBox1.Text);
+                shareddata.Instance.instrumentos_financieros = double.Parse(textBox1.Text);
+                shareddata.Instance.cyddiversos = double.Parse(textBox1.Text);
+                shareddata.Instance.almacen = double.Parse(textBox1.Text);
+                shareddata.Instance.pagos_anticipados = double.Parse(textBox1.Text);
             }
-            
+            else if(comboBox6.Text == "2018")
+            {
+                shareddata.Instance.bancos2 = double.Parse(textBox1.Text);
+                shareddata.Instance.instrumentos_financieros2 = double.Parse(textBox1.Text);
+                shareddata.Instance.cyddiversos2 = double.Parse(textBox1.Text);
+                shareddata.Instance.almacen2 = double.Parse(textBox1.Text);
+                shareddata.Instance.pagos_anticipados2 = double.Parse(textBox1.Text);
+            }
+            else
+            {
+                MessageBox.Show("Error", "Seleccione año");
+            }
+            if (!textBox1.Text.Equals(""))
+                {
+                    ListViewItem uno = new ListViewItem(comboBox1.Text);
+                    uno.SubItems.Add(textBox1.Text);
+                    listView1.Items.Add(uno);
+                    textBox1.Text = "";
+                    Double suma = 0;
+                    foreach (ListViewItem item in listView1.Items)
+                    {
+                        suma += Convert.ToDouble(item.SubItems[1].Text);
+                    }
+                    foreach (ListViewItem item1 in listView2.Items)
+                    {
+                        suma += Convert.ToDouble(item1.SubItems[1].Text);
+                    }
+                    textBox6.Text = Convert.ToString(suma);
+                } 
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -214,6 +233,20 @@ namespace ModernGUI_V3
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if (comboBox6.Text == "2017")
+            {
+                shareddata.Instance.edificios = double.Parse(textBox2.Text);
+                shareddata.Instance.softysis = double.Parse(textBox2.Text);
+            }
+            else if(comboBox6.Text == "2018")
+            {
+                shareddata.Instance.edificios2 = double.Parse(textBox2.Text);
+                shareddata.Instance.softysis2 = double.Parse(textBox2.Text);
+            }
+            else
+            {
+                MessageBox.Show("Error", "Seleccione año");
+            }
             if (!textBox2.Text.Equals(""))
             {
                 ListViewItem uno = new ListViewItem(comboBox2.Text);
@@ -240,6 +273,28 @@ namespace ModernGUI_V3
 
         private void button4_Click(object sender, EventArgs e)
         {
+            if (comboBox6.Text == "2017")
+            {
+                shareddata.Instance.proovedores = double.Parse(textBox3.Text);
+                shareddata.Instance.acreedores = double.Parse(textBox3.Text);
+                shareddata.Instance.retencion = double.Parse(textBox3.Text);
+                shareddata.Instance.impuestos = double.Parse(textBox3.Text);
+                shareddata.Instance.provisiones = double.Parse(textBox3.Text);
+                shareddata.Instance.otros = double.Parse(textBox3.Text);
+            }
+            else if(comboBox6.Text == "2018")
+            {
+                shareddata.Instance.proovedores2 = double.Parse(textBox3.Text);
+                shareddata.Instance.acreedores2 = double.Parse(textBox3.Text);
+                shareddata.Instance.retencion2 = double.Parse(textBox3.Text);
+                shareddata.Instance.impuestos2 = double.Parse(textBox3.Text);
+                shareddata.Instance.provisiones2 = double.Parse(textBox3.Text);
+                shareddata.Instance.otros2 = double.Parse(textBox3.Text);
+            }
+            else
+            {
+                MessageBox.Show("Error", "Seleccione año");
+            }
             if (!textBox3.Text.Equals(""))
             {
                 ListViewItem uno = new ListViewItem(comboBox3.Text);
@@ -265,7 +320,19 @@ namespace ModernGUI_V3
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if (!textBox4.Text.Equals(""))
+            if (comboBox6.Text == "2017")
+            {
+                shareddata.Instance.credito = double.Parse(textBox3.Text);
+            }
+            else if(comboBox6.Text=="2018")
+            {
+                shareddata.Instance.credito2 = double.Parse(textBox3.Text);
+            }
+            else
+            {
+                MessageBox.Show("Error","Seleccione año");
+            }
+                if (!textBox4.Text.Equals(""))
             {
                 ListViewItem uno = new ListViewItem(comboBox4.Text);
                 uno.SubItems.Add(textBox4.Text);
@@ -290,6 +357,25 @@ namespace ModernGUI_V3
 
         private void button6_Click(object sender, EventArgs e)
         {
+            if (comboBox6.Text == "2017")
+            {
+                shareddata.Instance.capital_social = double.Parse(textBox3.Text);
+                shareddata.Instance.aportacion = double.Parse(textBox3.Text);
+                shareddata.Instance.reservas = double.Parse(textBox3.Text);
+                shareddata.Instance.utilidads = double.Parse(textBox3.Text);
+         
+            }
+            else if (comboBox6.Text == "2018")
+            {
+                shareddata.Instance.capital_social2 = double.Parse(textBox3.Text);
+                shareddata.Instance.aportacion2 = double.Parse(textBox3.Text);
+                shareddata.Instance.reservas2 = double.Parse(textBox3.Text);
+                shareddata.Instance.utilidads2 = double.Parse(textBox3.Text);
+            }
+            else
+            {
+                MessageBox.Show("Error", "Seleccione año");
+            }
             if (!textBox5.Text.Equals(""))
             {
                 ListViewItem uno = new ListViewItem(comboBox5.Text);
