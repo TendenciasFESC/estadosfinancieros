@@ -188,6 +188,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\file.png" />
     <None Include="Resources\1990466.png" />
     <None Include="Resources\horizontal.png" />
     <None Include="Resources\vertical.png" />

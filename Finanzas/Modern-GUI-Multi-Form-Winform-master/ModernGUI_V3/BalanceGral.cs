@@ -492,5 +492,10 @@ namespace ModernGUI_V3
             };
             ppd.ShowDialog();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

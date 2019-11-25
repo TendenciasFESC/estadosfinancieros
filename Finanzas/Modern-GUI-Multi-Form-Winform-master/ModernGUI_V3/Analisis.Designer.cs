@@ -797,7 +797,7 @@
             // 
             // button2
             // 
-            this.button2.Image = global::ModernGUI_V3.Properties.Resources._88073;
+            this.button2.Image = global::ModernGUI_V3.Properties.Resources.file;
             this.button2.Location = new System.Drawing.Point(1169, 79);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(84, 78);
