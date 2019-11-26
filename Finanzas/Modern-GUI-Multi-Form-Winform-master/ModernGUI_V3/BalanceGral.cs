@@ -322,11 +322,11 @@ namespace ModernGUI_V3
         {
             if (comboBox6.Text == "2017")
             {
-                shareddata.Instance.credito = double.Parse(textBox3.Text);
+                shareddata.Instance.credito = double.Parse(textBox4.Text);
             }
             else if(comboBox6.Text=="2018")
             {
-                shareddata.Instance.credito2 = double.Parse(textBox3.Text);
+                shareddata.Instance.credito2 = double.Parse(textBox4.Text);
             }
             else
             {
@@ -359,18 +359,18 @@ namespace ModernGUI_V3
         {
             if (comboBox6.Text == "2017")
             {
-                shareddata.Instance.capital_social = double.Parse(textBox3.Text);
-                shareddata.Instance.aportacion = double.Parse(textBox3.Text);
-                shareddata.Instance.reservas = double.Parse(textBox3.Text);
-                shareddata.Instance.utilidads = double.Parse(textBox3.Text);
+                shareddata.Instance.capital_social = double.Parse(textBox5.Text);
+                shareddata.Instance.aportacion = double.Parse(textBox5.Text);
+                shareddata.Instance.reservas = double.Parse(textBox5.Text);
+                shareddata.Instance.utilidads = double.Parse(textBox5.Text);
          
             }
             else if (comboBox6.Text == "2018")
             {
-                shareddata.Instance.capital_social2 = double.Parse(textBox3.Text);
-                shareddata.Instance.aportacion2 = double.Parse(textBox3.Text);
-                shareddata.Instance.reservas2 = double.Parse(textBox3.Text);
-                shareddata.Instance.utilidads2 = double.Parse(textBox3.Text);
+                shareddata.Instance.capital_social2 = double.Parse(textBox5.Text);
+                shareddata.Instance.aportacion2 = double.Parse(textBox5.Text);
+                shareddata.Instance.reservas2 = double.Parse(textBox5.Text);
+                shareddata.Instance.utilidads2 = double.Parse(textBox5.Text);
             }
             else
             {

@@ -86,6 +86,10 @@
             this.button9 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.print = new System.Windows.Forms.Button();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.activoCirculanteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.finanzasDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.activoNoCirculanteBindingSource)).BeginInit();
@@ -524,10 +528,10 @@
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(60, 66);
+            this.dataGridView1.Location = new System.Drawing.Point(59, 103);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(915, 545);
+            this.dataGridView1.Size = new System.Drawing.Size(915, 543);
             this.dataGridView1.TabIndex = 47;
             this.dataGridView1.Visible = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -571,12 +575,64 @@
             this.print.Visible = false;
             this.print.Click += new System.EventHandler(this.print_Click);
             // 
+            // comboBox6
+            // 
+            this.comboBox6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
+            "2017",
+            "2018"});
+            this.comboBox6.Location = new System.Drawing.Point(821, 63);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(72, 32);
+            this.comboBox6.TabIndex = 359;
+            this.comboBox6.Text = "2017";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ModernGUI_V3.Properties.Resources.path36;
+            this.pictureBox2.Location = new System.Drawing.Point(110, 13);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(182, 84);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 358;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(478, 21);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(227, 25);
+            this.label13.TabIndex = 357;
+            this.label13.Text = "PATITO SOFTWARE";
+            // 
+            // label12
+            // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Black;
+            this.label12.Location = new System.Drawing.Point(309, 65);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(506, 25);
+            this.label12.TabIndex = 356;
+            this.label12.Text = "BALANCE GENERAL AL 31 DE DICIEMBRE DE\r\n";
+            // 
             // BalanceGral
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1028, 720);
+            this.Controls.Add(this.comboBox6);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.print);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button9);
@@ -688,5 +744,9 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button print;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
     }
 }
