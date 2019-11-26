@@ -185,6 +185,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\MARCO DE MADERA PARA FOTOS.png" />
+    <None Include="Resources\Portada-Educación-Financiera.jpg" />
+    <None Include="Resources\resign.png" />
+    <None Include="Resources\iniciar-la-sesion.png" />
+    <None Include="Resources\2974771.png" />
+    <None Include="Resources\Foro-Resuelve-Enigma-Matemáticas-e1540541912581.jpg" />
+    <None Include="Resources\297477.png" />
     <None Include="Resources\1990466.png" />
     <None Include="Resources\file.png" />
     <None Include="Resources\vertical.png" />
