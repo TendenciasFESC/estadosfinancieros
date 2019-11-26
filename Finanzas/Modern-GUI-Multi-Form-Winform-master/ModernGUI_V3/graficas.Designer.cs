@@ -152,20 +152,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Year supply of fairy cakes", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(162, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 46);
+            this.label1.Size = new System.Drawing.Size(74, 31);
             this.label1.TabIndex = 7;
             this.label1.Text = "2017";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Year supply of fairy cakes", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(539, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 46);
+            this.label2.Size = new System.Drawing.Size(74, 31);
             this.label2.TabIndex = 8;
             this.label2.Text = "2018";
             // 
@@ -186,7 +186,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "graficas";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "graficas";
             this.Load += new System.EventHandler(this.graficas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart2017)).EndInit();
