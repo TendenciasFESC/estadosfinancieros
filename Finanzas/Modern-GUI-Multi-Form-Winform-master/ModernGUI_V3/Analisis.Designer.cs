@@ -785,7 +785,7 @@
             // button1
             // 
             this.button1.Enabled = false;
-            this.button1.Image = global::ModernGUI_V3.Properties.Resources._1990466;
+            this.button1.Image = global::ModernGUI_V3.Properties.Resources.calculator;
             this.button1.Location = new System.Drawing.Point(1169, 172);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 78);
@@ -797,7 +797,7 @@
             // 
             // button2
             // 
-            this.button2.Image = global::ModernGUI_V3.Properties.Resources.file;
+            this.button2.Image = global::ModernGUI_V3.Properties.Resources.plus;
             this.button2.Location = new System.Drawing.Point(1169, 79);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(84, 78);
@@ -909,7 +909,7 @@
             // button3
             // 
             this.button3.Enabled = false;
-            this.button3.Image = global::ModernGUI_V3.Properties.Resources.vertical;
+            this.button3.Image = global::ModernGUI_V3.Properties.Resources.sort;
             this.button3.Location = new System.Drawing.Point(1169, 262);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(84, 78);
@@ -922,7 +922,7 @@
             // button4
             // 
             this.button4.Enabled = false;
-            this.button4.Image = global::ModernGUI_V3.Properties.Resources.horizontal;
+            this.button4.Image = global::ModernGUI_V3.Properties.Resources._switch;
             this.button4.Location = new System.Drawing.Point(1169, 346);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(84, 78);

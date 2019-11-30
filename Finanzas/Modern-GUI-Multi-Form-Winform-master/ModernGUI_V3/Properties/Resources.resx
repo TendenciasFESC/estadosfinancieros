@@ -130,6 +130,9 @@
   <data name="_2f0" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\2f0.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="sort" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sort.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="path36" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\path361.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,6 +154,9 @@
   <data name="297477" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\297477.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Foro-Resuelve-Enigma-Matemáticas-e1540541912581" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Foro-Resuelve-Enigma-Matemáticas-e1540541912581.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="close_window" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\close-window.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,11 +166,14 @@
   <data name="resign" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\resign.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Foro-Resuelve-Enigma-Matemáticas-e1540541912581" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Foro-Resuelve-Enigma-Matemáticas-e1540541912581.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="calculator" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calculator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Portada-Educación-Financiera" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Portada-Educación-Financiera.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MARCO DE MADERA PARA FOTOS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MARCO DE MADERA PARA FOTOS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Button-Close-(32)_1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Button-Close-(32)_1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,7 +190,7 @@
   <data name="iniciar-la-sesion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iniciar-la-sesion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="MARCO DE MADERA PARA FOTOS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\MARCO DE MADERA PARA FOTOS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="switch" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\switch.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

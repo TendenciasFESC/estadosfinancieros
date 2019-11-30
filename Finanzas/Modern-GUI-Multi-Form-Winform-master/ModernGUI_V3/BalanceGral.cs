@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Printing;
+using System.Threading;
 
 
 namespace ModernGUI_V3
@@ -20,6 +21,8 @@ namespace ModernGUI_V3
         {
             InitializeComponent();
         }
+
+     
 
         private void Limpiar()
         {
