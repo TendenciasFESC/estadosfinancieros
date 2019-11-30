@@ -187,21 +187,50 @@ namespace ModernGUI_V3
 
         private void button2_Click(object sender, EventArgs e)
         {
+            string cuenta = comboBox1.Text;
             if (comboBox6.Text == "2017")
             {
-                shareddata.Instance.bancos = double.Parse(textBox1.Text);
-                shareddata.Instance.instrumentos_financieros = double.Parse(textBox1.Text);
-                shareddata.Instance.cyddiversos = double.Parse(textBox1.Text);
-                shareddata.Instance.almacen = double.Parse(textBox1.Text);
-                shareddata.Instance.pagos_anticipados = double.Parse(textBox1.Text);
+                switch (cuenta)
+                {
+                    case "Bancos":
+                        shareddata.Instance.bancos2 = double.Parse(textBox1.Text);
+                        break;
+                    case "Instrumentos Financieros":
+                        shareddata.Instance.instrumentos_financieros2 = double.Parse(textBox1.Text);
+                        break;
+                    case "Clientes y Deudores Diversos":
+                        shareddata.Instance.cyddiversos2 = double.Parse(textBox1.Text);
+                        break;
+                    case "Almacen":
+                        shareddata.Instance.almacen2 = double.Parse(textBox1.Text);
+                        break;
+                    case "Pagos Anticipados":
+                        shareddata.Instance.pagos_anticipados2 = double.Parse(textBox1.Text);
+                        break;
+
+                }
+
             }
             else if(comboBox6.Text == "2018")
             {
-                shareddata.Instance.bancos2 = double.Parse(textBox1.Text);
-                shareddata.Instance.instrumentos_financieros2 = double.Parse(textBox1.Text);
-                shareddata.Instance.cyddiversos2 = double.Parse(textBox1.Text);
-                shareddata.Instance.almacen2 = double.Parse(textBox1.Text);
-                shareddata.Instance.pagos_anticipados2 = double.Parse(textBox1.Text);
+                switch (cuenta)
+                {
+                    case "Bancos":
+                        shareddata.Instance.bancos = double.Parse(textBox1.Text);
+                        break;
+                    case "Instrumentos Financieros":
+                        shareddata.Instance.instrumentos_financieros = double.Parse(textBox1.Text);
+                        break;
+                    case "Clientes y Deudores Diversos":
+                        shareddata.Instance.cyddiversos = double.Parse(textBox1.Text);
+                        break;
+                    case "Almacen":
+                        shareddata.Instance.almacen = double.Parse(textBox1.Text);
+                        break;
+                    case "Pagos Anticipados":
+                        shareddata.Instance.pagos_anticipados = double.Parse(textBox1.Text);
+                        break;
+                }
             }
             else
             {
@@ -233,15 +262,30 @@ namespace ModernGUI_V3
 
         private void button3_Click(object sender, EventArgs e)
         {
+            string caso = comboBox2.Text;
             if (comboBox6.Text == "2017")
             {
-                shareddata.Instance.edificios = double.Parse(textBox2.Text);
-                shareddata.Instance.softysis = double.Parse(textBox2.Text);
+                switch (caso)
+                {
+                    case "Edificio":
+                        shareddata.Instance.edificios2 = double.Parse(textBox2.Text);
+                        break;
+                    case "Software y Sistemas":
+                        shareddata.Instance.softysis2 = double.Parse(textBox2.Text);
+                        break;
+                }
             }
             else if(comboBox6.Text == "2018")
             {
-                shareddata.Instance.edificios2 = double.Parse(textBox2.Text);
-                shareddata.Instance.softysis2 = double.Parse(textBox2.Text);
+                switch (caso)
+                {
+                    case "Edificio":
+                        shareddata.Instance.edificios2 = double.Parse(textBox2.Text);
+                        break;
+                    case "Software y Sistemas":
+                        shareddata.Instance.softysis2 = double.Parse(textBox2.Text);
+                        break;
+                }
             }
             else
             {
@@ -273,14 +317,16 @@ namespace ModernGUI_V3
 
         private void button4_Click(object sender, EventArgs e)
         {
+            string caso = comboBox3.Text;
             if (comboBox6.Text == "2017")
             {
-                shareddata.Instance.proovedores = double.Parse(textBox3.Text);
-                shareddata.Instance.acreedores = double.Parse(textBox3.Text);
-                shareddata.Instance.retencion = double.Parse(textBox3.Text);
-                shareddata.Instance.impuestos = double.Parse(textBox3.Text);
-                shareddata.Instance.provisiones = double.Parse(textBox3.Text);
-                shareddata.Instance.otros = double.Parse(textBox3.Text);
+                switch (caso)
+                {
+                    case "Proveedores":
+                        shareddata.Instance.proovedores2 = double.Parse(textBox3.Text);
+                        break;
+
+                }
             }
             else if(comboBox6.Text == "2018")
             {
