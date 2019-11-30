@@ -325,17 +325,48 @@ namespace ModernGUI_V3
                     case "Proveedores":
                         shareddata.Instance.proovedores2 = double.Parse(textBox3.Text);
                         break;
+                    case "Acreedores":
+                        shareddata.Instance.acreedores2 = double.Parse(textBox3.Text);
+                        break;
+                    case "Pasivo Retencion De Efectivo":
+                        shareddata.Instance.retencion2 = double.Parse(textBox3.Text);
+                        break;
+                    case "IMP Por Pagar":
+                        shareddata.Instance.impuestos2 = double.Parse(textBox3.Text);
+                        break;
+                    case "Provisiones":
+                        shareddata.Instance.provisiones2 = double.Parse(textBox3.Text);
+                        break;
+                    case "Otros Pasivos A Corto Plazo":
+                        shareddata.Instance.otros2 = double.Parse(textBox3.Text);
+                        break;
 
                 }
             }
-            else if(comboBox6.Text == "2018")
+            else if (comboBox6.Text == "2018")
             {
-                shareddata.Instance.proovedores2 = double.Parse(textBox3.Text);
-                shareddata.Instance.acreedores2 = double.Parse(textBox3.Text);
-                shareddata.Instance.retencion2 = double.Parse(textBox3.Text);
-                shareddata.Instance.impuestos2 = double.Parse(textBox3.Text);
-                shareddata.Instance.provisiones2 = double.Parse(textBox3.Text);
-                shareddata.Instance.otros2 = double.Parse(textBox3.Text);
+                switch (caso)
+                {
+                    case "Proveedores":
+                        shareddata.Instance.proovedores = double.Parse(textBox3.Text);
+                        break;
+                    case "Acreedores":
+                        shareddata.Instance.acreedores = double.Parse(textBox3.Text);
+                        break;
+                    case "Pasivo Retencion De Efectivo":
+                        shareddata.Instance.retencion = double.Parse(textBox3.Text);
+                        break;
+                    case "IMP Por Pagar":
+                        shareddata.Instance.impuestos = double.Parse(textBox3.Text);
+                        break;
+                    case "Provisiones":
+                        shareddata.Instance.provisiones = double.Parse(textBox3.Text);
+                        break;
+                    case "Otros Pasivos A Corto Plazo":
+                        shareddata.Instance.otros = double.Parse(textBox3.Text);
+                        break;
+
+                }
             }
             else
             {
@@ -366,13 +397,24 @@ namespace ModernGUI_V3
 
         private void button5_Click(object sender, EventArgs e)
         {
+            string caso = comboBox4.Text;
             if (comboBox6.Text == "2017")
             {
-                shareddata.Instance.credito = double.Parse(textBox4.Text);
+                switch (caso)
+                {
+                    case "Credito Hipotecario":
+                        shareddata.Instance.credito2 = double.Parse(textBox4.Text);
+                        break;
+                }
             }
             else if(comboBox6.Text=="2018")
             {
-                shareddata.Instance.credito2 = double.Parse(textBox4.Text);
+                switch (caso)
+                {
+                    case "Credito Hipotecario":
+                        shareddata.Instance.credito = double.Parse(textBox4.Text);
+                        break;
+                }
             }
             else
             {
@@ -403,20 +445,43 @@ namespace ModernGUI_V3
 
         private void button6_Click(object sender, EventArgs e)
         {
+            string caso = comboBox5.Text;
             if (comboBox6.Text == "2017")
             {
-                shareddata.Instance.capital_social = double.Parse(textBox5.Text);
-                shareddata.Instance.aportacion = double.Parse(textBox5.Text);
-                shareddata.Instance.reservas = double.Parse(textBox5.Text);
-                shareddata.Instance.utilidads = double.Parse(textBox5.Text);
+                switch (caso)
+                {
+                    case "Capital Social":
+                        shareddata.Instance.capital_social2 = double.Parse(textBox5.Text);
+                        break;
+                    case "Aportaciones Aumento Capital":
+                        shareddata.Instance.aportacion2 = double.Parse(textBox5.Text);
+                        break;
+                    case "Reservas De Capital":
+                        shareddata.Instance.reservas2 = double.Parse(textBox5.Text);
+                        break;
+                    case "Utilidades Acumuladas":
+                        shareddata.Instance.utilidads2 = double.Parse(textBox5.Text);
+                        break;
+                }
          
             }
             else if (comboBox6.Text == "2018")
             {
-                shareddata.Instance.capital_social2 = double.Parse(textBox5.Text);
-                shareddata.Instance.aportacion2 = double.Parse(textBox5.Text);
-                shareddata.Instance.reservas2 = double.Parse(textBox5.Text);
-                shareddata.Instance.utilidads2 = double.Parse(textBox5.Text);
+                switch (caso)
+                {
+                    case "Capital Social":
+                        shareddata.Instance.capital_social = double.Parse(textBox5.Text);
+                        break;
+                    case "Aportaciones Aumento Capital":
+                        shareddata.Instance.aportacion = double.Parse(textBox5.Text);
+                        break;
+                    case "Reservas De Capital":
+                        shareddata.Instance.reservas = double.Parse(textBox5.Text);
+                        break;
+                    case "Utilidades Acumuladas":
+                        shareddata.Instance.utilidads = double.Parse(textBox5.Text);
+                        break;
+                }
             }
             else
             {
