@@ -25,7 +25,7 @@
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
     <PublisherName>Informatica FESC</PublisherName>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>0.1.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -251,8 +251,13 @@
     <None Include="Resources\2f0.png" />
     <None Include="Resources\remove.png" />
     <None Include="Resources\plus.png" />
-    <None Include="bin\Debug\src\catalogo_de_cuentas.txt" />
+    <Content Include="bin\Debug\src\catalogo_de_cuentas.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="1486564168-finance-bank-check_81495.ico" />
+    <Content Include="catalogo_de_cuentas.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="finanzas.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

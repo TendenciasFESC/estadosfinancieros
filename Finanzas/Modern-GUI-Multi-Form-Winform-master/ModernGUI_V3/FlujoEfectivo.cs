@@ -88,7 +88,7 @@ namespace ModernGUI_V3
             String line;
             try
             {
-                StreamReader sr = new StreamReader(Application.StartupPath + "\\src\\catalogo_de_cuentas.txt");
+                StreamReader sr = new StreamReader("catalogo_de_cuentas.txt");
                 line = sr.ReadLine();
                 while (line != null)
                 {
