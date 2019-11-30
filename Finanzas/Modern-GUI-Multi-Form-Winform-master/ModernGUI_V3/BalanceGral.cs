@@ -190,56 +190,58 @@ namespace ModernGUI_V3
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string cuenta = comboBox1.Text;
-            if (comboBox6.Text == "2017")
+            try
             {
-                switch (cuenta)
+                string cuenta = comboBox1.Text;
+                if (comboBox6.Text == "2017")
                 {
-                    case "Bancos":
-                        shareddata.Instance.bancos2 = double.Parse(textBox1.Text);
-                        break;
-                    case "Instrumentos Financieros":
-                        shareddata.Instance.instrumentos_financieros2 = double.Parse(textBox1.Text);
-                        break;
-                    case "Clientes y Deudores Diversos":
-                        shareddata.Instance.cyddiversos2 = double.Parse(textBox1.Text);
-                        break;
-                    case "Almacen":
-                        shareddata.Instance.almacen2 = double.Parse(textBox1.Text);
-                        break;
-                    case "Pagos Anticipados":
-                        shareddata.Instance.pagos_anticipados2 = double.Parse(textBox1.Text);
-                        break;
+                    switch (cuenta)
+                    {
+                        case "Bancos":
+                            shareddata.Instance.bancos2 = double.Parse(textBox1.Text);
+                            break;
+                        case "Instrumentos Financieros":
+                            shareddata.Instance.instrumentos_financieros2 = double.Parse(textBox1.Text);
+                            break;
+                        case "Clientes y Deudores Diversos":
+                            shareddata.Instance.cyddiversos2 = double.Parse(textBox1.Text);
+                            break;
+                        case "Almacen":
+                            shareddata.Instance.almacen2 = double.Parse(textBox1.Text);
+                            break;
+                        case "Pagos Anticipados":
+                            shareddata.Instance.pagos_anticipados2 = double.Parse(textBox1.Text);
+                            break;
+
+                    }
 
                 }
-
-            }
-            else if(comboBox6.Text == "2018")
-            {
-                switch (cuenta)
+                else if (comboBox6.Text == "2018")
                 {
-                    case "Bancos":
-                        shareddata.Instance.bancos = double.Parse(textBox1.Text);
-                        break;
-                    case "Instrumentos Financieros":
-                        shareddata.Instance.instrumentos_financieros = double.Parse(textBox1.Text);
-                        break;
-                    case "Clientes y Deudores Diversos":
-                        shareddata.Instance.cyddiversos = double.Parse(textBox1.Text);
-                        break;
-                    case "Almacen":
-                        shareddata.Instance.almacen = double.Parse(textBox1.Text);
-                        break;
-                    case "Pagos Anticipados":
-                        shareddata.Instance.pagos_anticipados = double.Parse(textBox1.Text);
-                        break;
+                    switch (cuenta)
+                    {
+                        case "Bancos":
+                            shareddata.Instance.bancos = double.Parse(textBox1.Text);
+                            break;
+                        case "Instrumentos Financieros":
+                            shareddata.Instance.instrumentos_financieros = double.Parse(textBox1.Text);
+                            break;
+                        case "Clientes y Deudores Diversos":
+                            shareddata.Instance.cyddiversos = double.Parse(textBox1.Text);
+                            break;
+                        case "Almacen":
+                            shareddata.Instance.almacen = double.Parse(textBox1.Text);
+                            break;
+                        case "Pagos Anticipados":
+                            shareddata.Instance.pagos_anticipados = double.Parse(textBox1.Text);
+                            break;
+                    }
                 }
-            }
-            else
-            {
-                MessageBox.Show("Error", "Seleccione año");
-            }
-            if (!textBox1.Text.Equals(""))
+                else
+                {
+                    MessageBox.Show("Error", "Seleccione año");
+                }
+                if (!textBox1.Text.Equals(""))
                 {
                     ListViewItem uno = new ListViewItem(comboBox1.Text);
                     uno.SubItems.Add(textBox1.Text);
@@ -255,7 +257,12 @@ namespace ModernGUI_V3
                         suma += Convert.ToDouble(item1.SubItems[1].Text);
                     }
                     textBox6.Text = Convert.ToString(suma);
-                } 
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Datos inclorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }  
         }
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
@@ -265,52 +272,60 @@ namespace ModernGUI_V3
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string caso = comboBox2.Text;
-            if (comboBox6.Text == "2017")
+            try
             {
-                switch (caso)
+                string caso = comboBox2.Text;
+                if (comboBox6.Text == "2017")
                 {
-                    case "Edificio":
-                        shareddata.Instance.edificios2 = double.Parse(textBox2.Text);
-                        break;
-                    case "Software y Sistemas":
-                        shareddata.Instance.softysis2 = double.Parse(textBox2.Text);
-                        break;
+                    switch (caso)
+                    {
+                        case "Edificio":
+                            shareddata.Instance.edificios2 = double.Parse(textBox2.Text);
+                            break;
+                        case "Software y Sistemas":
+                            shareddata.Instance.softysis2 = double.Parse(textBox2.Text);
+                            break;
+                    }
+                }
+                else if (comboBox6.Text == "2018")
+                {
+                    switch (caso)
+                    {
+                        case "Edificio":
+                            shareddata.Instance.edificios2 = double.Parse(textBox2.Text);
+                            break;
+                        case "Software y Sistemas":
+                            shareddata.Instance.softysis2 = double.Parse(textBox2.Text);
+                            break;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Error", "Seleccione año");
+                }
+                if (!textBox2.Text.Equals(""))
+                {
+                    ListViewItem uno = new ListViewItem(comboBox2.Text);
+                    uno.SubItems.Add(textBox2.Text);
+                    listView2.Items.Add(uno);
+                    textBox2.Text = "";
+                    Double suma = 0;
+                    foreach (ListViewItem item in listView2.Items)
+                    {
+                        suma += Convert.ToDouble(item.SubItems[1].Text);
+                    }
+                    foreach (ListViewItem item1 in listView1.Items)
+                    {
+                        suma += Convert.ToDouble(item1.SubItems[1].Text);
+                    }
+                    textBox6.Text = Convert.ToString(suma);
                 }
             }
-            else if(comboBox6.Text == "2018")
+            catch (Exception)
             {
-                switch (caso)
-                {
-                    case "Edificio":
-                        shareddata.Instance.edificios2 = double.Parse(textBox2.Text);
-                        break;
-                    case "Software y Sistemas":
-                        shareddata.Instance.softysis2 = double.Parse(textBox2.Text);
-                        break;
-                }
+                MessageBox.Show("Datos inclorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
-            {
-                MessageBox.Show("Error", "Seleccione año");
-            }
-            if (!textBox2.Text.Equals(""))
-            {
-                ListViewItem uno = new ListViewItem(comboBox2.Text);
-                uno.SubItems.Add(textBox2.Text);
-                listView2.Items.Add(uno);
-                textBox2.Text = "";
-                Double suma = 0;
-                foreach (ListViewItem item in listView2.Items)
-                {
-                    suma += Convert.ToDouble(item.SubItems[1].Text);
-                }
-                foreach (ListViewItem item1 in listView1.Items)
-                {
-                    suma += Convert.ToDouble(item1.SubItems[1].Text);
-                }
-                textBox6.Text = Convert.ToString(suma);
-            }
+
         }
 
         private void listView4_SelectedIndexChanged(object sender, EventArgs e)
@@ -320,197 +335,221 @@ namespace ModernGUI_V3
 
         private void button4_Click(object sender, EventArgs e)
         {
-            string caso = comboBox3.Text;
-            if (comboBox6.Text == "2017")
+            try
             {
-                switch (caso)
+                string caso = comboBox3.Text;
+                if (comboBox6.Text == "2017")
                 {
-                    case "Proveedores":
-                        shareddata.Instance.proovedores2 = double.Parse(textBox3.Text);
-                        break;
-                    case "Acreedores":
-                        shareddata.Instance.acreedores2 = double.Parse(textBox3.Text);
-                        break;
-                    case "Pasivo Retencion De Efectivo":
-                        shareddata.Instance.retencion2 = double.Parse(textBox3.Text);
-                        break;
-                    case "IMP Por Pagar":
-                        shareddata.Instance.impuestos2 = double.Parse(textBox3.Text);
-                        break;
-                    case "Provisiones":
-                        shareddata.Instance.provisiones2 = double.Parse(textBox3.Text);
-                        break;
-                    case "Otros Pasivos A Corto Plazo":
-                        shareddata.Instance.otros2 = double.Parse(textBox3.Text);
-                        break;
+                    switch (caso)
+                    {
+                        case "Proveedores":
+                            shareddata.Instance.proovedores2 = double.Parse(textBox3.Text);
+                            break;
+                        case "Acreedores":
+                            shareddata.Instance.acreedores2 = double.Parse(textBox3.Text);
+                            break;
+                        case "Pasivo Retencion De Efectivo":
+                            shareddata.Instance.retencion2 = double.Parse(textBox3.Text);
+                            break;
+                        case "IMP Por Pagar":
+                            shareddata.Instance.impuestos2 = double.Parse(textBox3.Text);
+                            break;
+                        case "Provisiones":
+                            shareddata.Instance.provisiones2 = double.Parse(textBox3.Text);
+                            break;
+                        case "Otros Pasivos A Corto Plazo":
+                            shareddata.Instance.otros2 = double.Parse(textBox3.Text);
+                            break;
 
+                    }
                 }
-            }
-            else if (comboBox6.Text == "2018")
-            {
-                switch (caso)
+                else if (comboBox6.Text == "2018")
                 {
-                    case "Proveedores":
-                        shareddata.Instance.proovedores = double.Parse(textBox3.Text);
-                        break;
-                    case "Acreedores":
-                        shareddata.Instance.acreedores = double.Parse(textBox3.Text);
-                        break;
-                    case "Pasivo Retencion De Efectivo":
-                        shareddata.Instance.retencion = double.Parse(textBox3.Text);
-                        break;
-                    case "IMP Por Pagar":
-                        shareddata.Instance.impuestos = double.Parse(textBox3.Text);
-                        break;
-                    case "Provisiones":
-                        shareddata.Instance.provisiones = double.Parse(textBox3.Text);
-                        break;
-                    case "Otros Pasivos A Corto Plazo":
-                        shareddata.Instance.otros = double.Parse(textBox3.Text);
-                        break;
+                    switch (caso)
+                    {
+                        case "Proveedores":
+                            shareddata.Instance.proovedores = double.Parse(textBox3.Text);
+                            break;
+                        case "Acreedores":
+                            shareddata.Instance.acreedores = double.Parse(textBox3.Text);
+                            break;
+                        case "Pasivo Retencion De Efectivo":
+                            shareddata.Instance.retencion = double.Parse(textBox3.Text);
+                            break;
+                        case "IMP Por Pagar":
+                            shareddata.Instance.impuestos = double.Parse(textBox3.Text);
+                            break;
+                        case "Provisiones":
+                            shareddata.Instance.provisiones = double.Parse(textBox3.Text);
+                            break;
+                        case "Otros Pasivos A Corto Plazo":
+                            shareddata.Instance.otros = double.Parse(textBox3.Text);
+                            break;
 
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Error", "Seleccione año");
+                }
+                if (!textBox3.Text.Equals(""))
+                {
+                    ListViewItem uno = new ListViewItem(comboBox3.Text);
+                    uno.SubItems.Add(textBox3.Text);
+                    listView3.Items.Add(uno);
+                    textBox3.Text = "";
+                    Double suma = 0;
+                    foreach (ListViewItem item in listView3.Items)
+                    {
+                        suma += Convert.ToDouble(item.SubItems[1].Text);
+                    }
+                    foreach (ListViewItem item2 in listView4.Items)
+                    {
+                        suma += Convert.ToDouble(item2.SubItems[1].Text);
+                    }
+                    foreach (ListViewItem item3 in listView5.Items)
+                    {
+                        suma += Convert.ToDouble(item3.SubItems[1].Text);
+                    }
+                    textBox7.Text = Convert.ToString(suma);
                 }
             }
-            else
+            catch (Exception)
             {
-                MessageBox.Show("Error", "Seleccione año");
+                MessageBox.Show("Datos inclorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            if (!textBox3.Text.Equals(""))
-            {
-                ListViewItem uno = new ListViewItem(comboBox3.Text);
-                uno.SubItems.Add(textBox3.Text);
-                listView3.Items.Add(uno);
-                textBox3.Text = "";
-                Double suma = 0;
-                foreach (ListViewItem item in listView3.Items)
-                {
-                    suma += Convert.ToDouble(item.SubItems[1].Text);
-                }
-                foreach (ListViewItem item2 in listView4.Items)
-                {
-                    suma += Convert.ToDouble(item2.SubItems[1].Text);
-                }
-                foreach (ListViewItem item3 in listView5.Items)
-                {
-                    suma += Convert.ToDouble(item3.SubItems[1].Text);
-                }
-                textBox7.Text = Convert.ToString(suma);
-            }
+
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            string caso = comboBox4.Text;
-            if (comboBox6.Text == "2017")
+            try
             {
-                switch (caso)
+                string caso = comboBox4.Text;
+                if (comboBox6.Text == "2017")
                 {
-                    case "Credito Hipotecario":
-                        shareddata.Instance.credito2 = double.Parse(textBox4.Text);
-                        break;
+                    switch (caso)
+                    {
+                        case "Credito Hipotecario":
+                            shareddata.Instance.credito2 = double.Parse(textBox4.Text);
+                            break;
+                    }
                 }
-            }
-            else if(comboBox6.Text=="2018")
-            {
-                switch (caso)
+                else if (comboBox6.Text == "2018")
                 {
-                    case "Credito Hipotecario":
-                        shareddata.Instance.credito = double.Parse(textBox4.Text);
-                        break;
+                    switch (caso)
+                    {
+                        case "Credito Hipotecario":
+                            shareddata.Instance.credito = double.Parse(textBox4.Text);
+                            break;
+                    }
                 }
-            }
-            else
-            {
-                MessageBox.Show("Error","Seleccione año");
-            }
+                else
+                {
+                    MessageBox.Show("Error", "Seleccione año");
+                }
                 if (!textBox4.Text.Equals(""))
-            {
-                ListViewItem uno = new ListViewItem(comboBox4.Text);
-                uno.SubItems.Add(textBox4.Text);
-                listView4.Items.Add(uno);
-                textBox4.Text = "";
-                Double suma = 0;
-                foreach (ListViewItem item in listView3.Items)
                 {
-                    suma += Convert.ToDouble(item.SubItems[1].Text);
+                    ListViewItem uno = new ListViewItem(comboBox4.Text);
+                    uno.SubItems.Add(textBox4.Text);
+                    listView4.Items.Add(uno);
+                    textBox4.Text = "";
+                    Double suma = 0;
+                    foreach (ListViewItem item in listView3.Items)
+                    {
+                        suma += Convert.ToDouble(item.SubItems[1].Text);
+                    }
+                    foreach (ListViewItem item2 in listView4.Items)
+                    {
+                        suma += Convert.ToDouble(item2.SubItems[1].Text);
+                    }
+                    foreach (ListViewItem item3 in listView5.Items)
+                    {
+                        suma += Convert.ToDouble(item3.SubItems[1].Text);
+                    }
+                    textBox7.Text = Convert.ToString(suma);
                 }
-                foreach (ListViewItem item2 in listView4.Items)
-                {
-                    suma += Convert.ToDouble(item2.SubItems[1].Text);
-                }
-                foreach (ListViewItem item3 in listView5.Items)
-                {
-                    suma += Convert.ToDouble(item3.SubItems[1].Text);
-                }
-                textBox7.Text = Convert.ToString(suma);
             }
+            catch (Exception)
+            {
+                MessageBox.Show("Datos inclorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            string caso = comboBox5.Text;
-            if (comboBox6.Text == "2017")
+            try
             {
-                switch (caso)
+                string caso = comboBox5.Text;
+                if (comboBox6.Text == "2017")
                 {
-                    case "Capital Social":
-                        shareddata.Instance.capital_social2 = double.Parse(textBox5.Text);
-                        break;
-                    case "Aportaciones Aumento Capital":
-                        shareddata.Instance.aportacion2 = double.Parse(textBox5.Text);
-                        break;
-                    case "Reservas De Capital":
-                        shareddata.Instance.reservas2 = double.Parse(textBox5.Text);
-                        break;
-                    case "Utilidades Acumuladas":
-                        shareddata.Instance.utilidads2 = double.Parse(textBox5.Text);
-                        break;
+                    switch (caso)
+                    {
+                        case "Capital Social":
+                            shareddata.Instance.capital_social2 = double.Parse(textBox5.Text);
+                            break;
+                        case "Aportaciones Aumento Capital":
+                            shareddata.Instance.aportacion2 = double.Parse(textBox5.Text);
+                            break;
+                        case "Reservas De Capital":
+                            shareddata.Instance.reservas2 = double.Parse(textBox5.Text);
+                            break;
+                        case "Utilidades Acumuladas":
+                            shareddata.Instance.utilidads2 = double.Parse(textBox5.Text);
+                            break;
+                    }
+
                 }
-         
+                else if (comboBox6.Text == "2018")
+                {
+                    switch (caso)
+                    {
+                        case "Capital Social":
+                            shareddata.Instance.capital_social = double.Parse(textBox5.Text);
+                            break;
+                        case "Aportaciones Aumento Capital":
+                            shareddata.Instance.aportacion = double.Parse(textBox5.Text);
+                            break;
+                        case "Reservas De Capital":
+                            shareddata.Instance.reservas = double.Parse(textBox5.Text);
+                            break;
+                        case "Utilidades Acumuladas":
+                            shareddata.Instance.utilidads = double.Parse(textBox5.Text);
+                            break;
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Error", "Seleccione año");
+                }
+                if (!textBox5.Text.Equals(""))
+                {
+                    ListViewItem uno = new ListViewItem(comboBox5.Text);
+                    uno.SubItems.Add(textBox5.Text);
+                    listView5.Items.Add(uno);
+                    textBox5.Text = "";
+                    Double suma = 0;
+                    foreach (ListViewItem item in listView3.Items)
+                    {
+                        suma += Convert.ToDouble(item.SubItems[1].Text);
+                    }
+                    foreach (ListViewItem item2 in listView4.Items)
+                    {
+                        suma += Convert.ToDouble(item2.SubItems[1].Text);
+                    }
+                    foreach (ListViewItem item3 in listView5.Items)
+                    {
+                        suma += Convert.ToDouble(item3.SubItems[1].Text);
+                    }
+                    textBox7.Text = Convert.ToString(suma);
+                }
             }
-            else if (comboBox6.Text == "2018")
+            catch (Exception)
             {
-                switch (caso)
-                {
-                    case "Capital Social":
-                        shareddata.Instance.capital_social = double.Parse(textBox5.Text);
-                        break;
-                    case "Aportaciones Aumento Capital":
-                        shareddata.Instance.aportacion = double.Parse(textBox5.Text);
-                        break;
-                    case "Reservas De Capital":
-                        shareddata.Instance.reservas = double.Parse(textBox5.Text);
-                        break;
-                    case "Utilidades Acumuladas":
-                        shareddata.Instance.utilidads = double.Parse(textBox5.Text);
-                        break;
-                }
+                MessageBox.Show("Datos inclorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else
-            {
-                MessageBox.Show("Error", "Seleccione año");
-            }
-            if (!textBox5.Text.Equals(""))
-            {
-                ListViewItem uno = new ListViewItem(comboBox5.Text);
-                uno.SubItems.Add(textBox5.Text);
-                listView5.Items.Add(uno);
-                textBox5.Text = "";
-                Double suma = 0;
-                foreach (ListViewItem item in listView3.Items)
-                {
-                    suma += Convert.ToDouble(item.SubItems[1].Text);
-                }
-                foreach (ListViewItem item2 in listView4.Items)
-                {
-                    suma += Convert.ToDouble(item2.SubItems[1].Text);
-                }
-                foreach (ListViewItem item3 in listView5.Items)
-                {
-                    suma += Convert.ToDouble(item3.SubItems[1].Text);
-                }
-                textBox7.Text = Convert.ToString(suma);
-            }
+
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -520,6 +559,7 @@ namespace ModernGUI_V3
 
         private void button8_Click(object sender, EventArgs e)
         {
+            
             if (double.Parse(textBox6.Text) != double.Parse(textBox7.Text))
             {
                 MessageBox.Show("El balance no cuadra", "Error");
