@@ -158,6 +158,12 @@ namespace ModernGUI_V3
             AbrirFormulario<FlujoEfectivo>();
             button5.BackColor = Color.FromArgb(12, 61, 92);
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<razones>();
+            button6.BackColor = Color.FromArgb(12, 61, 92);
+        }
         #endregion
         //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL
         private void AbrirFormulario<MiForm>() where MiForm : Form, new() {
@@ -194,6 +200,8 @@ namespace ModernGUI_V3
                 button4.BackColor = Color.FromArgb(184, 134, 11);
             if (Application.OpenForms["FlujoEfectivo"] == null)
                 button5.BackColor = Color.FromArgb(184, 134, 11);
+            if (Application.OpenForms["razones"] == null)
+                button6.BackColor = Color.FromArgb(184, 134, 11);
             
         }
     }
