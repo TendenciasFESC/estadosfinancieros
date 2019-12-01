@@ -33,6 +33,7 @@
             this.panelformularios = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -101,6 +102,7 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.panelMenu.Controls.Add(this.button7);
             this.panelMenu.Controls.Add(this.button6);
             this.panelMenu.Controls.Add(this.button5);
             this.panelMenu.Controls.Add(this.pictureBox2);
@@ -115,6 +117,28 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(188, 688);
             this.panelMenu.TabIndex = 1;
+            // 
+            // button7
+            // 
+            this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button7.FlatAppearance.BorderSize = 0;
+            this.button7.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(50)))), ((int)(((byte)(70)))));
+            this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.ForeColor = System.Drawing.Color.Gainsboro;
+            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
+            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button7.Location = new System.Drawing.Point(-2, 574);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(188, 40);
+            this.button7.TabIndex = 7;
+            this.button7.Text = "Aceraca de:";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -400,6 +424,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
     }
 }
 

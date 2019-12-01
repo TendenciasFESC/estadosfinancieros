@@ -66,6 +66,7 @@ namespace ModernGUI_V3
             ControlPaint.DrawSizeGrip(e.Graphics, Color.Transparent, sizeGripRectangle);
         }
 
+
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -163,6 +164,19 @@ namespace ModernGUI_V3
         {
             AbrirFormulario<razones>();
             button6.BackColor = Color.FromArgb(12, 61, 92);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Portada portada = new Portada();
+            portada.FormClosing += Portada_FormClosing;
+            this.Hide();
+            portada.Show();
+        }
+
+        private void Portada_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Show();
         }
         #endregion
         //METODO PARA ABRIR FORMULARIOS DENTRO DEL PANEL
